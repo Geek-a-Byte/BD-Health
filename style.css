@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@300&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  color: azure;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.image-box {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: 500px;
+  width: 500px;
+  margin-right: 20px;
+}
+.intro {
+  padding-top: 150px;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  color: rgba(0, 0, 0, 0.877);
+  /* font-family: "Raleway", sans-serif; */
+  /* vertical-align: centre; */
+}
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  color: rgb(30, 88, 92);
+}
+
+.navbar-custom {
+  background-image: linear-gradient(30deg, #cdfffa);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: rgba(27, 7, 7, 0.671);
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: #09f5d5fa;
+}
+li {
+  display: inline;
+  padding: 5px;
+}
+
+.home-section {
+  min-height: 70vh;
+  display: flex;
+  color: whitesmoke;
+}
