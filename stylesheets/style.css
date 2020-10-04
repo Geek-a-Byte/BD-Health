@@ -100,10 +100,13 @@ body {
 .container {
   max-width: 80%;
   margin: auto;
+  padding-left: 25px;
 }
 
-.row {
+.container .row {
   display: flex;
+  margin: -70px;
+  padding: 0;
   /* flex-wrap: wrap; */
 }
 
@@ -112,18 +115,23 @@ body {
   padding: 0;
 }
 
-img {
-  height: 600px;
-  width: 600px;
-  margin-left: 0px;
+.image-box img {
+  height: 680px;
+  width: 700px;
+  margin-left: -40px;
+  margin-right: 0px;
+  margin-top: 5px;
 }
 .intro {
-  padding-top: 230px;
+  text-align: center;
+  margin-top: 250px;
   vertical-align: middle;
-  margin-left: 50px;
+  margin-left: 20px;
+  margin-right: 0px;
+  padding: 0;
 }
 .intro h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", serif;
   color: rgba(0, 0, 0, 0.877);
   font-size: 48px;
   /* font-family: "Raleway", sans-serif; */
@@ -281,7 +289,7 @@ nav ul .dropdown a.nav-link:hover::after {
 /* footer */
 footer {
   background-color: black;
-  font-family: "Playfair Display", serif;
+  font-family: "Lato", sans-serif;
   padding: 85px 0 285px 0;
 }
 

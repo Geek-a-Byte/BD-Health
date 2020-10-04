@@ -34,8 +34,10 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
             
     <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/image_carousel.css">
    
 </head>
 <body>
@@ -176,26 +178,19 @@
     </nav>
     </div>
     </div>
-    
-
-
-
-    
-
-   
     <section class="home-section" id="home-section">
         <div class="container ">
-            <div class="row ">
+            <div class="row">
                 <div class="image-box">
                     <img src="./images/doctors.png">
                 </div>
-                
+    
                 <div class="intro">
                     <h2>Welcome to</h2>
                     <h1>BD Health</h1>
                     <h3>The central network for all health professionals of Bangladesh</h3>
                 </div>
-               
+    
     
             </div>
     
@@ -203,8 +198,64 @@
     
     </section>
 
-       
-    </div>
+    
+        <div class="container ">
+        <section id="dg-container" class="dg-container">
+            <div class="dg-wrapper">
+                <a href="#"><img src="./images/urbanhealth.jpg"></a>
+                <a href="#"><img src="./images/baby.jpg"> </a>
+                <a href="#"><img src="./images/corona.jpg"> </a>
+                <a href="#"><img src="./images/corona2.jpg"> </a>
+                <a href="#"><img src="./images/baby2.jpg"> </a>
+                <a href="#"><img src="./images/hospital.jpg"> </a>
+                <a href="#"><img src="./images/hospital2.jpg"> </a>
+    
+            </div>
+            <nav class="carousel-nav">
+                <span class="dg-prev">&lt;</span>
+                <span class="dg-next">&gt;</span>
+            </nav>
+        </section>
+        </div>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.gallery.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#dg-container').gallery();
+        });
+    </script/>
+
+    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        !function () {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function (t) {
+                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('frnhsw47f8xk');
+    </script>
+    <!-- End of Async Drift Code -->
+
     <footer>
         <nav class="footer-inner">
             <section class="footer-item">
