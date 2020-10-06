@@ -3,19 +3,24 @@ body {
   padding: 0;
   margin: 0;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
 }
 
+/********* header section **********/
 .header-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.2fr 2fr;
 }
+
+/********* primary menu **********/
 .primary-menu {
   width: 100%;
   height: 100px;
-  margin-top: 0px;
+  margin: 0px;
   padding: 20px 0px 20px 0px;
   background-color: rgb(180, 18, 18);
   /*top right bottom left*/
@@ -23,28 +28,40 @@ body {
   border-style: solid;
   border-color: rgb(43, 26, 26); */
 }
+
+.primary-menu li {
+  padding-left: 12px;
+  padding-right: 12px;
+  /* ! solved the problem of not showing the animation of nav li whilst showing the dropdown by adding this padding bottom */
+  padding-bottom: 15px;
+}
+
+/* *logo or site-title */
+#logo {
+  background-color: white;
+  border-radius: 0px 0px 7px 7px;
+}
 .site-title a img {
-  /* text-decoration: none;
-  color: black; */
-  height: 150px;
-  width: 280px;
-  margin-left: 20px;
+  height: 120px;
+  width: 230px;
 }
 .site-title {
   border: 2px outset rgb(224, 13, 13);
   border-top: 0px;
   /*top-left top-right bottom-right bottom-left*/
-  border-radius: 0px 0px 7px 7px;
+  border-radius: 0px 0px 7px 0px;
   outline-offset: 0.5rem;
-  /* margin-left: 50px;
-  margin-right: 50px; */
-  height: 160px;
-  width: 310px;
+  height: auto;
+  padding: 8px;
 }
-#logo {
-  background-color: white;
-  border-radius: 0px 0px 7px 7px;
+.scrolling-notice marquee {
+  margin: 4px 0px;
+  /* padding-top: 5px; */
 }
+.mobile-scrolling-notice {
+  display: none;
+}
+/* *search-box */
 
 .search-box {
   display: flex;
@@ -83,7 +100,6 @@ body {
   align-items: center;
   transition: 0.4s;
 }
-
 .search-txt {
   border: none;
   background: none;
@@ -97,38 +113,37 @@ body {
   width: 0px;
 }
 
-.container {
-  max-width: 80%;
-  margin: auto;
-  padding-left: 25px;
-}
+/** home-section- contains the illstration and side-text */
 
-.container .row {
+.home-section {
+  max-width: 100%;
+  padding: 20px;
   display: flex;
-  margin: -70px;
-  padding: 0;
-  /* flex-wrap: wrap; */
+  columns: 1fr 1fr;
+  padding: auto;
+  text-align: center;
+  background-color: antiquewhite;
+  /* min-height: 50vh; */
 }
 
+/** home-section illustration */
 .image-box {
-  margin: 0;
-  padding: 0;
+  max-width: 30%;
+  margin: auto;
+}
+.image-box img {
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
-.image-box img {
-  height: 680px;
-  width: 700px;
-  margin-left: -40px;
-  margin-right: 0px;
-  margin-top: 5px;
-}
+/* *home-section intro text */
 .intro {
   text-align: center;
-  margin-top: 250px;
-  vertical-align: middle;
-  margin-left: 20px;
-  margin-right: 0px;
-  padding: 0;
+  margin: 40px;
+  padding: 45px;
+  background: white;
+  border-radius: 7px;
 }
 .intro h1 {
   font-family: "Roboto", serif;
@@ -137,31 +152,22 @@ body {
   /* font-family: "Raleway", sans-serif; */
   /* vertical-align: centre; */
 }
-h2 {
+.intro h2 {
   font-family: "Raleway", sans-serif;
   font-size: 25px;
   color: rgb(30, 88, 92);
 }
-h3 {
+.intro h3 {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   color: rgb(30, 88, 92);
 }
 
-li {
-  padding-left: 12px;
-  padding-right: 12px;
-}
+/* *navbar starts */
 
-.home-section {
-  min-height: 70vh;
-  display: flex;
-  color: whitesmoke;
-}
-
-nav {
-  margin-top: 2px;
-  margin-left: -10px;
+.primary-menu nav {
+  padding: 5px;
+  margin: 2px;
 }
 
 .navbar-custom .navbar-nav .nav-link {
@@ -201,7 +207,7 @@ nav ul .main-menu a:hover::after {
   transform: scaleX(1);
 }
 
-/* Dropdown */
+/** Navbar Dropdown */
 
 nav ul .dropdown {
   list-style: none;
@@ -218,16 +224,14 @@ nav ul .dropdown i {
   margin: 0;
   padding: 0;
 }
-#menuwrapper .dropdown:hover .dropdown-menu {
+#menuwrapper:hover div {
   display: block;
-  margin-top: 0px;
-  /* text-decoration: none; */
+  position: absolute;
+  /* margin-top: 15px; */
+  padding: 0;
+  margin-left: 10px;
 }
-/* 
-.dropdown:hover .dropdown-menu {
-  display: block;
-  position: relative;
-} */
+
 .dropdown:hover .dropdown-menu ul {
   list-style-type: none;
   /*top right bottom left*/
@@ -257,7 +261,7 @@ nav ul .dropdown i {
   text-decoration: none;
 }
 
-/* nav ul .dropdown a.nav-link::before,
+nav ul .dropdown a.nav-link::before,
 nav ul .dropdown a.nav-link::after {
   content: "";
   position: absolute;
@@ -279,14 +283,9 @@ nav ul .dropdown a.nav-link::before {
 nav ul .dropdown a.nav-link:hover::before,
 nav ul .dropdown a.nav-link:hover::after {
   transform: scaleX(1);
-} */
-
-#menuwrapper:hover div {
-  display: block;
-  position: absolute;
 }
 
-/* footer */
+/** footer */
 footer {
   background-color: black;
   font-family: "Lato", sans-serif;
@@ -429,7 +428,11 @@ footer .desktop {
   display: block;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
+  .mobile-scrolling-notice {
+    padding: 5px;
+    display: none;
+  }
   footer {
     padding: 50px 0 70px 0 !important;
   }
@@ -477,5 +480,93 @@ footer .desktop {
 
   .footer-inner:after {
     top: 730px;
+  }
+}
+
+/** mobile-navbar */
+.mobile-container {
+  display: none;
+}
+
+.topnav {
+  /* overflow: hidden; */
+  background-color: #333;
+  position: relative;
+}
+
+#myLinks {
+  display: none;
+}
+
+.topnav #myLinks a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.burger-icon a {
+  float: right;
+  display: block;
+  color: white;
+  background: white;
+  margin: 5px;
+  padding: 15px;
+  color: black;
+}
+.burger-icon a:hover {
+  background: grey;
+}
+
+.topnav #myLinks a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* !mobile and tab screen */
+@media only screen and (max-width: 800px) {
+  .site-title {
+    border-radius: 0px;
+  }
+  .scrolling-notice {
+    display: none;
+  }
+  .mobile-scrolling-notice {
+    display: block;
+  }
+  .site-title a img {
+    height: 82px;
+    width: 160px;
+  }
+  .primary-menu {
+    height: 100px;
+  }
+
+  .home-section {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  .primary-menu nav {
+    display: none;
+  }
+  .mobile-container {
+    display: block;
+  }
+  #dg-container {
+    width: 100%;
+    text-align: start;
+  }
+  .dg-wrapper a img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border: 8px solid white;
   }
 }
