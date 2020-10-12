@@ -292,8 +292,12 @@ footer {
   background-color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* font-family: , sans-serif; */
-  padding: 40px 50px 340px 50px;
-  margin: auto;
+  padding: 40px 10px 100px 50px;
+  margin: 0px;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.8fr 0.8fr 1fr 1fr 1fr;
 }
 
 .footer-item {
@@ -402,6 +406,13 @@ footer a:hover {
 }
 
 @media (max-width: 1280px) {
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-item {
+    padding-bottom: 15px;
+  }
   body {
     padding: 0px;
     margin: 0px;
@@ -411,26 +422,6 @@ footer a:hover {
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
-  }
-
-  .footer-site-header {
-    display: grid;
-    grid-template-rows: 1fr;
-    padding-bottom: 45px;
-  }
-  .explore {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-bottom: 45px;
-  }
-  .footer-contact-visit-email {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding-bottom: 45px;
-  }
-  .footer .social-media {
-    font-size: 22px;
-    color: white;
   }
 }
 
