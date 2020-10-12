@@ -292,7 +292,8 @@ footer {
   background-color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* font-family: , sans-serif; */
-  padding: 85px 0 285px 0;
+  padding: 40px 50px 340px 50px;
+  margin: auto;
 }
 
 .footer-inner {
@@ -300,8 +301,6 @@ footer {
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 120px;
-
-  position: relative;
 }
 
 .footer-item {
@@ -409,22 +408,6 @@ footer a:hover {
   color: white;
 }
 
-footer .desktop {
-  display: auto;
-}
-/* 
-.footer-inner:after {
-  content: "© 2020 Envoy. All Rights Reserved.";
-  font-weight: 300;
-  letter-spacing: 0.03em;
-  font-size: 13px;
-  color: #d1d1d1;
-  position: absolute;
-  top: 260px;
-  clear: both;
-  display: block;
-} */
-
 @media (max-width: 1280px) {
   body {
     padding: 0px;
@@ -440,53 +423,29 @@ footer .desktop {
     padding: 5px;
     display: none;
   }
-  footer {
-    padding: 50px 0 70px 0 !important;
-  }
 
   .footer-inner {
     border-bottom: 1px solid #333;
-    padding-bottom: 490px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
-
-  .footer-item {
-    margin: 0 0 42px 0;
-    width: 50%;
+  .footer-site-header {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-bottom: 45px;
   }
-
-  .footer-item:nth-of-type(1) {
-    border-bottom: 1px solid #333;
-    padding-bottom: 32px;
-    float: none;
-    width: 100%;
+  .explore {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 45px;
   }
-
-  .footer-item:nth-of-type(2) {
-    clear: both;
+  .footer-contact-visit-email {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 45px;
   }
-
-  .footer-item:nth-of-type(4) {
-    clear: both;
-    display: block;
-  }
-
-  .footer-item:nth-of-type(6) {
-    clear: both;
-  }
-
-  .footer-item:nth-of-type(7) {
-    clear: both;
-    float: left;
-    margin: 20px 0 0 -13px;
-  }
-
-  .desktop {
-    display: none;
-  }
-
-  .footer-inner:after {
-    top: 730px;
+  .footer .social-media {
+    font-size: 22px;
+    color: white;
   }
 }
 
