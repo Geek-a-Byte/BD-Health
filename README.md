@@ -7,4 +7,3 @@ A website developed to create
 - a section for sharing the stories of courageous patients
 
 ![GitHub Logo](/images/logo.png)
-Format: ![logo of BD Health](url)
