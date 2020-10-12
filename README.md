@@ -6,3 +6,4 @@ A website developed to create
 - live Q/A sessions
 - a section for sharing the stories of courageous patients
 
+![GitHub Logo](/images/logo.png)
