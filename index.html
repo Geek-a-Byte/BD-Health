@@ -132,7 +132,7 @@
             class="navbar navbar-expand-sm navbar-custom justify-content-start"
           >
             <ul class="navbar-nav">
-              <div id="menuwrapper">
+              <!-- <div id="menuwrapper">
                 <li class="nav-item dropdown">
                   <a class="nav-link" href="#">Patient's Portal</a>
                   <i class="fas fa-caret-down"></i>
@@ -142,6 +142,19 @@
                       <li><a href="#">Sign In</a></li>
                       <li><a href="#">My Profile</a></li>
                       <li><a href="#">Share Your Story</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </div>
+              <div id="menuwrapper">
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#">Admin</a>
+                  <i class="fas fa-caret-down"></i>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="#">Sign Up</a></li>
+                      <li><a href="#">Sign In</a></li>
+                      <li><a href="#">My Profile</a></li>
                     </ul>
                   </div>
                 </li>
@@ -174,7 +187,11 @@
                     </ul>
                   </div>
                 </li>
-              </div>
+              </div> -->
+              <li class="nav-item main-menu">
+                <!-- target="_blank"  -->
+                <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+              </li>
               <div id="menuwrapper">
                 <li class="nav-item dropdown">
                   <a class="nav-link" href="#">Blog</a>
@@ -221,18 +238,19 @@
               <li class="nav-item main-menu">
                 <a class="nav-link" href="#">BD Hospitals</a>
               </li>
+              <li class="nav-item main-menu">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li>
+              <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search" />
+                <a class="search-btn" href="#">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+              </li>
             </ul>
-            <div class="search-box">
-              <input
-                class="search-txt"
-                type="text"
-                name=""
-                placeholder="Type to search"
-              />
-              <a class="search-btn" href="#">
-                <i class="fas fa-search"></i>
-              </a>
-            </div>
+            
           </nav>
           <!-- mobile-nav -->
           <div class="mobile-container">
@@ -249,8 +267,8 @@
               </div>
 
               <div id="myLinks">
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
+                <a href="#news">DashBoard</a>
+                <a href="#contact">Blogs</a>
                 <a href="#about">About</a>
               </div>
             </div>
@@ -271,45 +289,82 @@
     <!--* header section ends -->
 
     <section class="home-section">
-      <div class="image-box">
+      <!-- <div class="image-box">
         <img src="./images/doctors.png" />
-      </div>
+      </div> -->
+      <centre>
+        <!-- <base
+          href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wanaka-tree.jpg"
+        /> -->
+        <div id="carousel">
+          <figure id="spinner">
+            <img src="./images/urbanhealth.jpg" />
+            <img src="./images/baby.jpg" />
+            <img src="./images/corona.jpg" />
+            <img src="./images/corona2.jpg" />
+            <img src="./images/baby2.jpg" />
+            <img src="./images/hospital.jpg" />
+            <img src="./images/hospital2.jpg" />
+            <img src="./images/baby2.jpg" />
+          </figure>
+        </div>
+        <span style="float: left" class="ss-icon" onclick="galleryspin('-')"
+          >&lt;</span
+        >
+        <span style="float: right" class="ss-icon" onclick="galleryspin('')"
+          >&gt;</span
+        >
+      </centre>
 
       <div class="intro">
         <h2>Welcome to</h2>
         <h1>BD Health</h1>
         <h3>The central network for all health professionals of Bangladesh</h3>
+        <a href="https://meet.google.com/aje-dnrb-fbw">Telehealth</a>
       </div>
     </section>
 
-    <div class="image-carousel-container">
-      <section id="dg-container" class="dg-container">
-        <div class="dg-wrapper">
-          <a href="#"><img src="./images/urbanhealth.jpg" /></a>
-          <a href="#"><img src="./images/baby.jpg" /> </a>
-          <a href="#"><img src="./images/corona.jpg" /> </a>
-          <a href="#"><img src="./images/corona2.jpg" /> </a>
-          <a href="#"><img src="./images/baby2.jpg" /> </a>
-          <a href="#"><img src="./images/hospital.jpg" /> </a>
-          <a href="#"><img src="./images/hospital2.jpg" /> </a>
-        </div>
-        <nav class="carousel-nav">
-          <span class="dg-prev">&lt;</span>
-          <span class="dg-next">&gt;</span>
-        </nav>
-      </section>
-    </div>
+    <!-- <centre>
+      <div id="carousel">
+        <figure id="spinner">
+          <img src="./images/urbanhealth.jpg" />
+          <img src="./images/baby.jpg" />
+          <img src="./images/corona.jpg" />
+          <img src="./images/corona2.jpg" />
+          <img src="./images/baby2.jpg" />
+          <img src="./images/hospital.jpg" />
+          <img src="./images/hospital2.jpg" />
+          <img src="./images/baby2.jpg" />
+        </figure>
+      </div>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.4.0.js"
-    ></script>
-
-    <script type="text/javascript" src="js/jquery.gallery.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        $("#dg-container").gallery();
-      });
+      <span style="float: left" class="ss-icon" onclick="galleryspin('-')"
+        >&lt;</span
+      >
+      <span style="float: right" class="ss-icon" onclick="galleryspin('')"
+        >&gt;</span
+      >
+    </centre> -->
+    <script>
+      var angle = 0;
+      function galleryspin(sign) {
+        spinner = document.querySelector("#spinner");
+        if (!sign) {
+          angle = angle + 45;
+        } else {
+          angle = angle - 45;
+        }
+        spinner.setAttribute(
+          "style",
+          "-webkit-transform: rotateY(" +
+            angle +
+            "deg); -moz-transform: rotateY(" +
+            angle +
+            "deg); transform: rotateY(" +
+            angle +
+            "deg);"
+        );
+      }
     </script>
 
     <footer>

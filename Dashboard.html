@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap CSS -->
+
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+    <link rel="stylesheet" href="./stylesheets/Dashboard.css">
+   
+    
+    <title>SignUp</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="brand"><span>BDHealth</span> Dashboard</h1>
+        <h2>Create an Account</h2>
+        <div class="container inner-container">
+            <div class="row shadow bg-white rounded-lg p-3">
+                <div class="col-md-2">
+                    <div class="nav col nav-pills col-sm-12 mr-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a href="#tab1" class="nav-link rounded-pill shadow mb-3 mr-3 col-sm-12 active text-center" id="web-tab"
+                            data-toggle="pill" role="tab" aria-controls="web-tab" aria-selected="true">Doctor</a>
+                        <a href="#tab2" class="nav-link rounded-pill shadow mb-3 mr-3 col-sm-12 text-center" id="seo-tab"
+                            data-toggle="pill" role="tab" aria-controls="seo-tab" aria-selected="true">Patient</a>
+                        <a href="#tab3" class="nav-link rounded-pill shadow mb-3 mr-3 col-sm-12 text-center" id="sem-tab"
+                            data-toggle="pill" role="tab" aria-controls="sem-tab" aria-selected="true">
+        
+                            Admin
+                        </a>
+                    
+                    </div>
+        
+                </div>
+                <div class="col-md-10">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <!-- tab1 -->
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="web-tab">
+        
+                            <div class="wrapper animated bounceInLeft">
+                                <div class="company-info">
+                                    <img src="./images/cyandocs.jpg">
+                                </div>
+                                <div class="contact">
+                                    <h3>Create an Account</h3>
+                                    <form>
+                                        <p>
+                                            <label>Name</label>
+                                            <input id="username" type="text" name="name">
+                                        </p>
+                                        <p>
+                                            <label>Hospital</label>
+                                            <input id="hospital" type="text" name="hospital">
+                                        </p>
+                                        <p>
+                                            <label>Address</label>
+                                            <input id="address" type="text" name="Address">
+                                        </p>
+                                        <p>
+                                            <label>Designation</label>
+                                            <input id="Designation" type="text" name="Designation">
+                                        </p>
+                                        <p>
+                                            <label>Role</label>
+                                            <input id="role" type="text" name="role">
+                                        </p>
+                                        <p id="email">
+                                            <label>Email Address</label>
+                                            <input type="email" name="email">
+                                        </p>
+                                        <p>
+                                            <label>password</label>
+                                            <input id="password" type="password" name="password">
+                                        </p>
+                                        <p>
+                                            <label>Phone Number</label>
+                                            <input id="phone" type="text" name="phone">
+                                        </p>
+                                        <span></span>
+                                        <p class="full">
+                                            <button type="Submit" id="addBtn">Submit</button>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+        
+                        <!-- tab2 -->
+        
+                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="seo-tab">
+                       
+                            <div class="wrapper animated bounceInLeft">
+                                <div class="company-info">
+                                    <img src="./images/6262.jpg">
+                                </div>
+                                <div class="contact">
+                                    <h3>Create an Account</h3>
+                                    <form>
+                                        <p>
+                                            <label>Name</label>
+                                            <input id="patient-username" type="text" name="name">
+                                        </p>
+                    
+                                        <p>
+                                            <label>Role</label>
+                                            <input id="patient-role" type="text" name="role">
+                                        </p>
+                                        <p id="email">
+                                            <label>Email Address</label>
+                                            <input type="patient-email" name="email">
+                                        </p>
+                                        <p>
+                                            <label>password</label>
+                                            <input id="patient-password" type="password" name="password">
+                                        </p>
+                                        <span></span>
+                                        <p class="full">
+                                            <button type="Submit" id="addPatientBtn">Submit</button>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+        
+                        <!-- tab3 -->
+        
+                        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="sem-tab">
+                       
+                            <div class="wrapper animated bounceInLeft">
+                                <div class="company-info">
+                                    <img src="./images/3982305.jpg">
+                                </div>
+                                <div class="contact">
+                                    <h3>Create an Account</h3>
+                                    <form>
+                                        <p>
+                                            <label>Name</label>
+                                            <input id="username" type="text" name="name">
+                                        </p>
+                                      
+                                        <p>
+                                            <label>Role</label>
+                                            <input id="role" type="text" name="role">
+                                        </p>
+                                        <p>
+                                            <label>Email Address</label>
+                                            <input id="email_id" type="text" name="email_id">
+                                        </p>
+                                        <p>
+                                            <label>password</label>
+                                            <input id="password" type="password" name="password">
+                                        </p>
+                                        <p>
+                                            <label>Phone Number</label>
+                                            <input id="phone" type="text" name="phone">
+                                        </p>
+                                        <p>
+                                            <label>Website Security Key</label>
+                                            <input id="key" type="text" name="key">
+                                        </p>
+                                        <span></span>
+                                        <p class="full">
+                                            <button type="Submit" id="addBtn">Submit</button>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                   
+        
+                    </div>
+        
+        
+        
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Sign In</h2>
+        <div class="container inner-container">
+            <div class="row shadow bg-white rounded-lg p-3">
+        <div class="wrapper">
+        <div class="company-info">
+        <img src="./images/4957136.jpg">
+        </div>
+        <div class="contact">
+        <h3>Sign In</h3>
+        <form>
+        <!-- <p>
+        <label>Name</label>
+        <input id="username" type="text" name="name">
+        </p> -->
+    
+                                        <p>
+                                                <label>Role</label>
+                                                <input id="role" type="text" name="role">
+                                            </p>
+                                        <p>
+                                            <label>Email Address</label>
+                                            <input id="email_id" type="text" name="email_id">
+                                        </p>
+                                        <p>
+                                            <label>password</label>
+                                            <input id="password" type="password" name="password">
+                                        </p>
+                                        <span></span>
+                                        <!-- <p>
+                                                <label>Phone Number</label>
+                                                <input id="phone" type="text" name="phone">
+                                            </p> -->
+                                        <!-- <p>
+                                                <label>Website Security Key</label>
+                                                <input id="key" type="text" name="key">
+                                            </p> -->
+                                        <span></span>
+                                        <p class="full">
+                                            <button type="Submit" id="SigninBtn">SignIn</button>
+                                        </p>
+        </form>
+        </div>
+                        
+        </div>
+    
+        </div>
+    
+    
+    
+    </div>
+ 
+
+  
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDQqtJGLAyJdeWvm28B-hMNxOwwuW4ferY",
+    authDomain: "bd-health-637cc.firebaseapp.com",
+    databaseURL: "https://bd-health-637cc.firebaseio.com",
+    projectId: "bd-health-637cc",
+    storageBucket: "bd-health-637cc.appspot.com",
+    messagingSenderId: "737021719272",
+    appId: "1:737021719272:web:aa1b836a2c66b8cfc04f5d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="./js/main.js"></script>
+   
+    
+</body>
+</html>

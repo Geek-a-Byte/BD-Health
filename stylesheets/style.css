@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@300&display=swap");
 body {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 * {
@@ -30,8 +30,8 @@ body {
 }
 
 .primary-menu li {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
   /* ! solved the problem of not showing the animation of nav li whilst showing the dropdown by adding this padding bottom */
   padding-bottom: 15px;
 }
@@ -66,37 +66,39 @@ body {
 .search-box {
   display: flex;
   position: absolute;
-  top: -1px;
-  left: 83%;
+  top: 0px;
+  left: 81%;
   /* top: 500px;
   left: 52%; */
   transform: scaleX(70%);
   background: #2f3640;
-  height: 60px;
+  height: 58px;
   border-radius: 40px;
   padding: 10px;
 }
 .search-box:hover > .search-txt {
-  width: 128px;
+  width: 142px;
   padding: 10px;
 }
 .search-box:hover > .search-btn {
   background: white;
   color: #2f3640;
+  text-decoration: none;
 }
 .search-btn:hover {
   text-decoration: none;
 }
 .search-btn {
   color: #ffffff;
-  float: right;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #2f3640;
   display: flex;
   text-decoration: none;
+  /* justify content center dile search button horixontally center e ashe */
   justify-content: center;
+  /* align-items center dile search button vertically center e ashe */
   align-items: center;
   transition: 0.4s;
 }
@@ -116,11 +118,11 @@ body {
 /** home-section- contains the illstration and side-text */
 
 .home-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-evenly;
   max-width: 100%;
   padding: 20px;
-  display: flex;
-  columns: 1fr 1fr;
-  padding: auto;
   text-align: center;
   background-color: antiquewhite;
   /* min-height: 50vh; */
@@ -140,8 +142,8 @@ body {
 /* *home-section intro text */
 .intro {
   text-align: center;
-  margin: 40px;
-  padding: 45px;
+  margin: 20px;
+  padding: 25px;
   background: white;
   border-radius: 7px;
 }
@@ -429,6 +431,16 @@ footer .desktop {
 }
 
 @media (max-width: 1280px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
   .mobile-scrolling-notice {
     padding: 5px;
     display: none;
