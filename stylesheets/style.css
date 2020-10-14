@@ -16,165 +16,32 @@ body {
   grid-template-columns: 0.2fr 2fr;
 }
 
-/********* primary menu **********/
-.primary-menu {
+/** navbar */
+.navbar-custom {
+  background-color: rgb(180, 18, 18);
   width: 100%;
   height: 100px;
   margin: 0px;
-  padding: 20px 0px 20px 0px;
-  background-color: rgb(180, 18, 18);
-  /*top right bottom left*/
-  /* border-width: 0px 0px 2px 0px;
-  border-style: solid;
-  border-color: rgb(43, 26, 26); */
+  padding: 40px 0px 25px 0px;
+  z-index: 2;
 }
-
-.primary-menu li {
+.navbar-custom li {
   padding-left: 20px;
   padding-right: 20px;
-  /* ! solved the problem of not showing the animation of nav li whilst showing the dropdown by adding this padding bottom */
   padding-bottom: 15px;
 }
-
-/* *logo or site-title */
-#logo {
-  background-color: white;
-  border-radius: 0px 0px 7px 7px;
-}
-.site-title a img {
-  height: 120px;
-  width: 230px;
-}
-.site-title {
-  border: 2px outset rgb(224, 13, 13);
-  border-top: 0px;
-  /*top-left top-right bottom-right bottom-left*/
-  border-radius: 0px 0px 7px 0px;
-  outline-offset: 0.5rem;
-  height: auto;
-  padding: 8px;
-}
-.scrolling-notice marquee {
-  margin: 4px 0px;
-  /* padding-top: 5px; */
-}
-.mobile-scrolling-notice {
-  display: none;
-}
-/* *search-box */
-
-.search-box {
-  display: flex;
-  position: absolute;
-  top: 0px;
-  left: 81%;
-  /* top: 500px;
-  left: 52%; */
-  transform: scaleX(70%);
-  background: #2f3640;
-  height: 58px;
-  border-radius: 40px;
-  padding: 10px;
-}
-.search-box:hover > .search-txt {
-  width: 142px;
-  padding: 10px;
-}
-.search-box:hover > .search-btn {
-  background: white;
-  color: #2f3640;
-  text-decoration: none;
-}
-.search-btn:hover {
-  text-decoration: none;
-}
-.search-btn {
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #2f3640;
-  display: flex;
-  text-decoration: none;
-  /* justify content center dile search button horixontally center e ashe */
-  justify-content: center;
-  /* align-items center dile search button vertically center e ashe */
-  align-items: center;
-  transition: 0.4s;
-}
-.search-txt {
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0;
-  color: white;
-  font-size: 16px;
-  transition: 0.4s;
-  line-height: 40px;
-  width: 0px;
+.navbar-toggler {
+  color: wheat;
+  float: right;
 }
 
-/** home-section- contains the illstration and side-text */
-
-.home-section {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-content: space-evenly;
-  max-width: 100%;
-  padding: 20px;
-  text-align: center;
-  background-color: antiquewhite;
-  /* min-height: 50vh; */
+.navbar .container {
+  margin-left: -120px;
 }
-
-/** home-section illustration */
-.image-box {
-  max-width: 30%;
-  margin: auto;
-}
-.image-box img {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-/* *home-section intro text */
-.intro {
-  text-align: center;
-  margin: 20px;
-  padding: 25px;
-  background: white;
-  border-radius: 7px;
-}
-.intro h1 {
-  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif; */
-  color: rgba(0, 0, 0, 0.877);
-  font-size: 48px;
-  /* font-family: "Raleway", sans-serif; */
-  /* vertical-align: centre; */
-}
-.intro h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 25px;
-  color: rgb(30, 88, 92);
-}
-.intro h3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  color: rgb(30, 88, 92);
-}
-
-/* *navbar starts */
-
-.primary-menu nav {
-  padding: 5px;
-  margin: 2px;
-}
-
 .navbar-custom .navbar-nav .nav-link {
   color: cornsilk;
 }
+
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:focus .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
@@ -287,6 +154,133 @@ nav ul .dropdown a.nav-link:hover::after {
   transform: scaleX(1);
 }
 
+/* *logo or site-title */
+#logo {
+  background-color: white;
+  border-radius: 0px 0px 7px 7px;
+}
+.site-title a img {
+  height: 120px;
+  width: 230px;
+}
+.site-title {
+  border: 2px outset rgb(224, 13, 13);
+  border-top: 0px;
+  /*top-left top-right bottom-right bottom-left*/
+  border-radius: 0px 0px 7px 0px;
+  outline-offset: 0.5rem;
+  height: auto;
+  padding: 8px;
+}
+
+/* scrolling-notice */
+.scrolling-notice marquee {
+  background-color: rgb(255, 252, 249);
+  margin: 0px;
+  padding: 1px 0px 0px 2px;
+}
+
+/* *search-box */
+
+.search-box {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  left: 81%;
+  /* top: 500px;
+  left: 52%; */
+  transform: scaleX(70%);
+  background: #2f3640;
+  height: 58px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search-box:hover > .search-txt {
+  width: 142px;
+  padding: 10px;
+}
+.search-box:hover > .search-btn {
+  background: white;
+  color: #2f3640;
+  text-decoration: none;
+}
+.search-btn:hover {
+  text-decoration: none;
+}
+.search-btn {
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  text-decoration: none;
+  /* justify content center dile search button horixontally center e ashe */
+  justify-content: center;
+  /* align-items center dile search button vertically center e ashe */
+  align-items: center;
+  transition: 0.4s;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+/** home-section- contains the illstration and side-text */
+
+.home-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-evenly;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: antiquewhite;
+  min-height: 50vh;
+}
+
+/** home-section illustration */
+.image-box {
+  max-width: 30%;
+  margin: auto;
+}
+.image-box img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+/* *home-section intro text */
+.intro {
+  text-align: center;
+  margin: 20px;
+  padding: 25px;
+  background: white;
+  border-radius: 7px;
+}
+.intro h1 {
+  color: rgba(0, 0, 0, 0.877);
+  font-size: 48px;
+}
+.intro h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  color: rgb(30, 88, 92);
+}
+.intro h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: rgb(30, 88, 92);
+}
+
 /** footer */
 footer {
   background-color: black;
@@ -337,8 +331,6 @@ footer {
 }
 
 footer h1 {
-  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif; */
   font-weight: 700;
   color: white;
   font-size: 34px;
@@ -354,11 +346,6 @@ footer h2 {
   color: #d1d1d1;
   letter-spacing: 0.03em;
   padding: 15px 0 0 0;
-}
-
-.color {
-  color: white;
-  font-weight: 300;
 }
 
 footer h3 {
@@ -404,90 +391,20 @@ footer a {
 footer a:hover {
   color: white;
 }
-
-@media (max-width: 1280px) {
-  .footer-inner {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .footer-item {
-    padding-bottom: 15px;
-  }
-  body {
-    padding: 0px;
-    margin: 0px;
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    scroll-behavior: smooth;
-  }
-}
-
-/** mobile-navbar */
-.mobile-container {
-  display: none;
-}
-
-.topnav {
-  /* overflow: hidden; */
-  background-color: #333;
-  position: relative;
-}
-
-#myLinks {
-  display: none;
-}
-
-.topnav #myLinks a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.burger-icon a {
-  float: right;
-  display: block;
-  color: white;
-  background: white;
-  margin: 5px;
-  padding: 15px;
-  color: black;
-}
-.burger-icon a:hover {
-  background: grey;
-}
-
-.topnav #myLinks a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #4caf50;
-  color: white;
-}
-
 /* !mobile and tab screen */
-@media only screen and (max-width: 800px) {
+@media (max-width: 1280px) {
   .site-title {
     border-radius: 0px;
   }
   .scrolling-notice {
-    display: none;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-left: -250px;
   }
-  .mobile-scrolling-notice {
-    display: block;
-  }
+
   .site-title a img {
     height: 82px;
     width: 160px;
-  }
-  .primary-menu {
-    height: 100px;
   }
 
   .home-section {
@@ -495,20 +412,57 @@ footer a:hover {
     float: none;
     width: 100%;
   }
-  .primary-menu nav {
+
+  .fa-bars {
+    padding-top: 5px;
+  }
+  .navbar .container {
+    margin-left: 0px;
+  }
+  .search-box {
+    /* z-index: -1; */
+    top: 25px;
+    left: 7%;
+  }
+  #menuwrapper:hover .dropdown-menu {
+    display: none;
+    /*top right bottom left*/
+  }
+  .fa-caret-down {
     display: none;
   }
-  .mobile-container {
-    display: block;
+  .navbar-custom li {
+    margin: 10px;
+    height: 45px;
   }
-  #dg-container {
-    width: 100%;
-    text-align: start;
+  .navbar-custom li:hover {
+    background-color: rgba(255, 255, 255, 0.247);
   }
-  .dg-wrapper a img {
-    display: block;
-    height: 100px;
-    width: 100px;
-    border: 8px solid white;
+  .navbar-custom li:hover a {
+    color: black;
+  }
+  nav ul .dropdown a.nav-link::before,
+  nav ul .dropdown a.nav-link::after {
+    width: 0;
+  }
+  nav ul .main-menu a::before,
+  nav ul .main-menu a::after {
+    width: 0;
+  }
+
+  nav ul .main-menu a:hover::before,
+  nav ul .main-menu a:hover::after {
+    transform: scaleX(1);
+  }
+  .navbar-nav {
+    background-color: black;
+  }
+  /* footer */
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-item {
+    padding-bottom: 15px;
   }
 }

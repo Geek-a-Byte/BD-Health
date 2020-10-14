@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.first-part img {
+  width: 500px;
+  height: 500px;
+  float: left;
+}
+
+.first-part p {
+  padding: 150px 50px;
+}
+
+.second-part img {
+  width: 500px;
+  height: 500px;
+  float: right;
+}
+.second-part p {
+  padding: 150px 50px;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

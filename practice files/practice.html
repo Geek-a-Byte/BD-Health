@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom bg-dark static-top justify-content-start">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="http://placehold.it/150x50?text=Logo" alt=""> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item main-menu">
+                            <!-- target="_blank"  -->
+                            <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+                        </li>
+                        <div id="menuwrapper">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">Blog</a>
+                                <i class="fas fa-caret-down"></i>
+        
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="#">Investigation and Diagonosis</a></li>
+                                        <li><a href="#">Clinical trials</a></li>
+                                        <li><a href="#">Research and Discovery</a></li>
+                                        <li><a href="#">Case study</a></li>
+                                        <li><a href="#">Survey</a></li>
+                                        <li><a href="#">Drug review</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div id="menuwrapper">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">Services</a>
+                                <i class="fas fa-caret-down"></i>
+        
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="#">Emergency tele health</a></li>
+                                        <li><a href="#">E-books and Magazines</a></li>
+                                        <li><a href="#">Book an ICU</a></li>
+                                        <li><a href="#">Blood Bank</a></li>
+                                        <li><a href="#">PPE/N-95 mask</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">Live Q/A</a>
+                        </li>
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">Drug Store</a>
+                        </li>
+        
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">Find a Doctor</a>
+                        </li>
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">BD Hospitals</a>
+                        </li>
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <!-- <form class="form-inline">
+                          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> -->
+                        <!-- <li>
+        
+                          <div class="search-box">
+                            <input class="search-txt" type="text" name="" placeholder="Type to search" />
+                            <a class="search-btn" href="#">
+                              <i class="fas fa-search"></i>
+                            </a>
+                          </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+     
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active"
+                style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">First Slide</h2>
+                    <p class="lead">This is a description for the first slide.</p>
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item"
+                style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">Second Slide</h2>
+                    <p class="lead">This is a description for the second slide.</p>
+                </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item"
+                style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">Third Slide</h2>
+                    <p class="lead">This is a description for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="first-part">
+        <img src="./images/3982305.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ut assumenda perferendis doloremque? Nihil laborum voluptas pariatur cumque ut praesentium aut minus delectus totam non sapiente incidunt doloremque, esse odio?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis sequi quaerat quam. Sapiente illo expedita libero labore provident facere aspernatur placeat est similique tenetur, inventore at perspiciatis sed neque!Lorem
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla minima beatae sint corporis, reiciendis, temporibus excepturi voluptatibus velit nostrum quasi rem doloremque quibusdam nesciunt illo delectus aperiam eveniet, aspernatur eligendi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum sed quibusdam, sequi aliquid placeat minima ratione, animi illum alias eaque, quaerat natus nesciunt voluptatem tenetur quos quae. Deserunt, <sit class="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam pariatur provident officia reprehenderit qui quaerat commodi quisquam enim eligendi et laboriosam, inventore porro quibusdam dolorem doloremque. Sunt porro inventore <provident class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, repellendus impedit! Pariatur voluptates id rem ea, vero ipsam cum porro quam fuga repellat! Maiores consequuntur eveniet vero, modi alias quae!Loremlorem
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat architecto animi nostrum. Eum velit, consequatur vero id, ipsam tempora distinctio necessitatibus, ab culpa nam quo praesentium. Ea, dolore obcaecati!Loremlorem
+
+        
+        </p>
+    </div>
+    <div class="second-part">
+     
+        <img src="./images/6262.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ut assumenda perferendis doloremque? Nihil
+                    laborum voluptas pariatur cumque ut praesentium aut minus delectus totam non sapiente incidunt doloremque, esse
+                    odio?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis sequi quaerat quam. Sapiente illo
+                    expedita libero labore provident facere aspernatur placeat est similique tenetur, inventore at perspiciatis sed
+                    neque!Lorem
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla minima beatae sint corporis, reiciendis,
+                    temporibus excepturi voluptatibus velit nostrum quasi rem doloremque quibusdam nesciunt illo delectus aperiam
+                    eveniet, aspernatur eligendi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum sed quibusdam, sequi aliquid placeat
+                    minima ratione, animi illum alias eaque, quaerat natus nesciunt voluptatem tenetur quos quae. Deserunt,
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam pariatur provident officia
+                    reprehenderit qui quaerat commodi quisquam enim eligendi et laboriosam, inventore porro quibusdam dolorem
+                    doloremque. Sunt porro inventore Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Ex, repellendus impedit! Pariatur voluptates id rem ea, vero ipsam cum porro quam fuga
+                    repellat! Maiores consequuntur eveniet vero, modi alias quae!Loremlorem
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat architecto animi nostrum. Eum
+                    velit, consequatur vero id, ipsam tempora distinctio necessitatibus, ab culpa nam quo praesentium. Ea,
+                    dolore obcaecati!Loremlorem
+                
+                </p>
+        
+    </div>
+   
+</body>
+</html>
