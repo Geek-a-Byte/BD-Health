@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.theStickySidebar {
+  position: static;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.profile-sidebar {
+  /* top right bottom left */
+  margin: 0 4px 30px 0;
+  background-color: #741111;
+  padding: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+.changing-board {
+  margin: 50px 10px 50px 10px;
+}
+.booking-doc-img img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-det-info {
+  padding: 25px 0px 0px 0px;
+}
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-det-info h3 {
+  text-align: center;
+  font-size: 18px;
+  color: antiquewhite;
+}
+
+.doctor-details h5 {
+  text-align: center;
+  font-size: 12px;
+  color: antiquewhite;
+}
+
+.dashboard-widget {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 15px;
+}
+.dashboard-menu ul {
+  padding: 10px;
+}
+
+.dashboard-menu ul li {
+  line-height: 35px;
+  list-style-type: none;
+}
+
+.dashboard-menu ul li span {
+  margin-left: 0px;
+}
+
+.dashboard-menu ul li i {
+  margin-right: 10px;
+}
+
+.dashboard-menu ul li a {
+  text-decoration: none;
+  color: white;
+  /* color: black; */
+}
+
+.dashboard-menu ul li a:hover {
+  text-decoration: none;
+  color: rgb(253, 161, 161);
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36deg);
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+  }
+}
+
+.changing-div .row p {
+  font-weight: 500;
+}
+
+.changing-div .row {
+  margin: 0px 10px 10px 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: brown solid 1px;
+}
+
+.changing-div .row #progress-status {
+  display: flex;
+  padding: 25px;
+}
+
+#progress-status .progress-text {
+  margin: auto;
+  padding: 0px 15px;
+}
+
+.site-title a img {
+  height: 82px;
+  width: 160px;
+}
+
+.site-title {
+  border-radius: 0px;
+}
+
+.scrolling-notice {
+  display: none;
+}
+.patient-appointments {
+  padding: 10px;
+  border-radius: 4px;
+  border: brown solid 1px;
+}
+
+@media only screen and (max-width: 800px) {
+  .progress {
+    margin-bottom: 20px;
+  }
+  .changing-div {
+    width: 100%;
+  }
+  .progress {
+    width: 80px;
+    height: 80px;
+  }
+  #progress-status .progress-text {
+    border-right: 0px;
+  }
+}
+
+.bg-success-light {
+  background-color: rgba(15, 183, 107, 0.12) !important;
+  color: #26af48 !important;
+}
+
+.bg-danger-light {
+  background-color: rgba(242, 17, 54, 0.12) !important;
+  color: #e63c3c !important;
+}
+.bg-warning-light {
+  background-color: rgba(255, 152, 0, 0.12) !important;
+  color: #f39c12 !important;
+}
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/* table */
+tr.header {
+  border-bottom: 1px solid #741111;
+  border-top: 1px solid black;
+  line-height: 50px;
+}
+#appointments th {
+  padding-right: 18px;
+}
+#appointments td {
+  padding-right: 18px;
+}
+#prescriptions th {
+  padding-right: 70px;
+}
+#prescriptions td {
+  padding-right: 70px;
+}
+
+.table-element {
+  font-size: 14px;
+  border-bottom: 1px solid #741111;
+}
+.patient-info {
+  margin: 0 10px;
+}
+.patient-info a {
+  font-size: 15px;
+}
+.patient-info h5 {
+  font-size: 14px;
+}
+.table-element img {
+  margin: 8px 0px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}

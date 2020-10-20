@@ -1,0 +1,17 @@
+th {
+  padding: 22px;
+  font-size: 15px;
+}
+td {
+  padding: 0 20px;
+}
+.table-element .patient-info a {
+  font-size: 15px;
+}
+
+.patient-info h5 {
+  font-size: 14px;
+}
+.tab-content {
+  padding: 0 20px;
+}

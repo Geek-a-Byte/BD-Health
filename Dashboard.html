@@ -1,28 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Bootstrap CSS -->
-
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        
-    <link rel="stylesheet" href="./stylesheets/Dashboard.css">
-   
+    <meta charset="UTF-8" />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     
+    <!--SEO stuff-->
+    <meta name="description" content="BD health care system blogs telehealth" />
+    <meta name="keywords" content="BD health, telehealth, Emergency, Healthcare blogs" />
+    <meta name="author" content="Nazia shehnaz" />
+    <link rel="icon" type="image/png" href="./images/titlelogo.png" />
+    <title>BD Health</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/Dashboard.css">
     <title>SignUp</title>
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="brand"><span>BDHealth</span> Dashboard</h1>
+        <script>
+            "use strict";
+
+            !(function () {
+                var t = (window.driftt = window.drift = window.driftt || []);
+                if (!t.init) {
+                    if (t.invoked)
+                        return void (window.console && console.error && console.error("Drift snippet included twice."));
+                    (t.invoked = !0),
+                        (t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on",]),
+                        (t.factory = function (e) {
+                            return function () {
+                                var n = Array.prototype.slice.call(arguments);
+                                return n.unshift(e), t.push(n), t;
+                            };
+                        }),
+                        t.methods.forEach(function (e) {
+                            t[e] = t.factory(e);
+                        }),
+                        (t.load = function (t) {
+                            var e = 3e5,
+                                n = Math.ceil(new Date() / e) * e,
+                                o = document.createElement("script");
+                            (o.type = "text/javascript"),
+                                (o.async = !0),
+                                (o.crossorigin = "anonymous"),
+                                (o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js");
+                            var i = document.getElementsByTagName("script")[0];
+                            i.parentNode.insertBefore(o, i);
+                        });
+                }
+            })();
+            drift.SNIPPET_VERSION = "0.3.1";
+            drift.load("frnhsw47f8xk");
+        </script>
+
+<!--* header section starts -->
+<div class="header-section fixed-top">
+    <!--* site-logo -->
+
+    <div id="logo">
+        <div class="site-title">
+            <a href="./index.html"><img src="../images/Artboard 2bd_health.png" /></a>
+        </div>
+    </div>
+
+    <div>
+
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="http://placehold.it/150x50?text=Logo" alt=""> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <div id="menuwrapper">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">Dashboard</a>
+                                <i class="fas fa-caret-down"></i>
+                        
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="./Doctor/DocPortal.html">Doctor's Portal</a></li>
+                                        <li><a href="#">Patient's Portal</a></li>
+                                        <li><a href="#">Admin</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div id="menuwrapper">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">Blog</a>
+                                <i class="fas fa-caret-down"></i>
+
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="#">Investigation and Diagonosis</a></li>
+                                        <li><a href="#">Clinical trials</a></li>
+                                        <li><a href="#">Research and Discovery</a></li>
+                                        <li><a href="#">Case study</a></li>
+                                        <li><a href="#">Survey</a></li>
+                                        <li><a href="#">Drug review</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div id="menuwrapper">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">Services</a>
+                                <i class="fas fa-caret-down"></i>
+
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="#">Emergency tele health</a></li>
+                                        <li><a href="#">E-books and Magazines</a></li>
+                                        <li><a href="#">Book an ICU</a></li>
+                                        <li><a href="#">Blood Bank</a></li>
+                                        <li><a href="#">PPE/N-95 mask</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">Live Q/A</a>
+                        </li>
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">Drug Store</a>
+                        </li>
+
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">Find a Doctor</a>
+                        </li>
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">BD Hospitals</a>
+                        </li>
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search" />
+                <a class="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </nav>
+
+    </div>
+</div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div class="container2">
+        <!-- <h1 class="brand"><span>BDHealth</span> Dashboard</h1> -->
         <h2>Create an Account</h2>
-        <div class="container inner-container">
+        <div class="container2 inner-container2">
             <div class="row shadow bg-white rounded-lg p-3">
                 <div class="col-md-2">
                     <div class="nav col nav-pills col-sm-12 mr-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -190,10 +341,10 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container2">
         <h2>Sign In</h2>
-        <div class="container inner-container">
-            <div class="row shadow bg-white rounded-lg p-3">
+        <div class="container2 inner-container2">
+        <div class="row shadow bg-white rounded-lg p-3">
         <div class="wrapper">
         <div class="company-info">
         <img src="./images/4957136.jpg">
@@ -238,10 +389,11 @@
     
         </div>
     
-    
+        
     
     </div>
- 
+    </div>
+    
 
   
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
@@ -261,7 +413,85 @@
   firebase.initializeApp(firebaseConfig);
 </script>
 <script src="./js/main.js"></script>
-   
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-site-header">
+                <section class="footer-item">
+                    <h1>BD Health</h1>
     
+                    <h2>
+                        We dream to shape the future of the healthcare system in BD.<br />
+                    </h2>
+                    <b style="color:blanchedalmond; font-size:18px">For the people . Of the people . By the people.</b>
+                    <br><br>
+                </section>
+            </div>
+    
+            <div class="explore">
+                <section class="footer-item">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./Dashboard.html">Dashboard</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Live Q/A</a></li>
+                        <li><a href="#">Drug Store</a></li>
+                        <li><a href="#">Find a Doctor</a></li>
+                        <li><a href="#">BD Hospitals</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </section>
+            </div>
+    
+            <div class="footer-contact-visit-email">
+                <section class="footer-item">
+    
+                    <h3><i class="fas fa-envelope"></i> Email Us</h3>
+                    <a href="mailto:BDHealth@gmail.com">
+                        <p>BDHealth@gmail.com</p>
+                    </a>
+                    <br>
+                    <h3><i class="fas fa-phone"></i> Contact Us</h3>
+                    <p>+880192894835</p>
+    
+                </section>
+            </div>
+    
+            <div class="visit-us">
+                <section class="footer-item">
+                    <h3><i class="fas fa-map-marker-alt"></i> Visit Us</h3>
+                    <p>32,Mirpur Road<br>Oriental Log cabin<br>
+                        NewMarket,Dhaka-1205</p>
+    
+                </section>
+            </div>
+    
+            <div class="social-media-section">
+                <section class="footer-item">
+                    <h3>Follow</h3>
+                    <div class="social-media" style="font-size: 22px; color:white"><a href="#"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a></div>
+                    <br>
+                    <h3>Share</h3>
+                    <div class="social-media" style="font-size: 22px; color:white"><a href="#"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a></div>
+    
+                </section>
+            </div>
+    
+    
+        </div>
+    
+    </footer>
+<div>
+    <p
+        style="margin:0;padding:2px 0px;padding-bottom:7px;text-align: center; background-color:rgb(180, 18, 18);color:white;font-size: 14px;">
+        © 2020 Envoy. All Rights Reserved.</p>
+</div>
 </body>
 </html>

@@ -3,27 +3,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <!-- font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+    <meta name="viewport" content="width=, initial-scale=1.0"/>
 
     <!--SEO stuff-->
     <meta name="description" content="BD health care system blogs telehealth" />
-    <meta
-      name="keywords"
-      content="BD health, telehealth, Emergency, Healthcare blogs"
-    />
+    <meta name="keywords" content="BD health, telehealth, Emergency, Healthcare blogs"/>
     <meta name="author" content="Nazia shehnaz" />
     <link rel="icon" type="image/png" href="./images/titlelogo.png" />
     <title>BD Health</title>
@@ -46,25 +32,9 @@
         var t = (window.driftt = window.drift = window.driftt || []);
         if (!t.init) {
           if (t.invoked)
-            return void (
-              window.console &&
-              console.error &&
-              console.error("Drift snippet included twice.")
-            );
+            return void (window.console && console.error && console.error("Drift snippet included twice."));
           (t.invoked = !0),
-            (t.methods = [
-              "identify",
-              "config",
-              "track",
-              "reset",
-              "debug",
-              "show",
-              "ping",
-              "page",
-              "hide",
-              "off",
-              "on",
-            ]),
+            (t.methods = ["identify","config","track","reset","debug","show","ping","page","hide","off","on",]),
             (t.factory = function (e) {
               return function () {
                 var n = Array.prototype.slice.call(arguments);
@@ -81,8 +51,7 @@
               (o.type = "text/javascript"),
                 (o.async = !0),
                 (o.crossorigin = "anonymous"),
-                (o.src =
-                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+                (o.src ="https://js.driftt.com/include/" + n + "/" + t + ".js");
               var i = document.getElementsByTagName("script")[0];
               i.parentNode.insertBefore(o, i);
             });
@@ -126,7 +95,6 @@
                   <li class="nav-item dropdown">
                     <a class="nav-link" href="#">Blog</a>
                     <i class="fas fa-caret-down"></i>
-                
                     <div class="dropdown-menu">
                       <ul>
                         <li><a href="#">Investigation and Diagonosis</a></li>
@@ -171,8 +139,7 @@
                 <li class="nav-item main-menu">
                   <a class="nav-link" href="#">About</a>
                 </li>
-            
-            </ul>
+                </ul>
               
             </div>
           </div>
@@ -191,16 +158,12 @@
     </div>
  
     <!--* header section ends -->
-    <div class="fullscreen-bg">
-      <div class="tenor-gif-embed" data-postid="14705159" data-share-method="host" data-width="100%"
-        data-aspect-ratio="1.0">
-        <a href="https://tenor.com/view/lifeline-heartbeat-heart-gif-14705159"
-          style="max-width:100%; height:auto;background-color: black;">Lifeline Heartbeat GIF</a> from <a
-          href="https://tenor.com/search/lifeline-gifs">Lifeline GIFs</a></div>
-      <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     
-    </div>
-    <div class="main">
+      <video autoplay muted loop id="myVideo">
+        <source src="./images/lifeline.gif" type="video/mp4">
+      </video>
+     
+   <div class="main">
       <section class="hero-section">
         <div class="box-with-text tracking-in-expand">BD HEALTH</div>
       </section>
@@ -249,16 +212,7 @@
         } else {
           angle = angle - 45;
         }
-        spinner.setAttribute(
-          "style",
-          "-webkit-transform: rotateY(" +
-            angle +
-            "deg); -moz-transform: rotateY(" +
-            angle +
-            "deg); transform: rotateY(" +
-            angle +
-            "deg);"
-        );
+        spinner.setAttribute("style","-webkit-transform: rotateY(" +angle +"deg); -moz-transform: rotateY(" +angle +"deg); transform: rotateY(" +angle +"deg);");
       }
     </script>
 
@@ -336,17 +290,5 @@
     <div>
       <p style="margin:0;padding:2px 0px;padding-bottom:7px;text-align: center; background-color:rgb(180, 18, 18);color:white;font-size: 14px;">© 2020 Envoy. All Rights Reserved.</p>
     </div>
-
-    <!--* mobile nav script -->
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display == "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
   </body>
 </html>

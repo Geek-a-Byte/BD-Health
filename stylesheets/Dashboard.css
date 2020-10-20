@@ -4,13 +4,13 @@
 
 body {
   background: antiquewhite;
-  color: #485e74;
+  /* color: #485e74; */
   line-height: 1.6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
-.container {
+.container2 {
   max-width: 100%;
   margin-top: 2px;
   margin-bottom: 2px;
@@ -19,11 +19,11 @@ body {
   padding: 1em;
 }
 
-.container h1 {
+.container2 h1 {
   color: black;
 }
 
-.container h2 {
+.container2 h2 {
   color: black;
 }
 .col-md-10 {
@@ -39,12 +39,12 @@ body {
   background-color: #171b20;
 }
 
-.nav-link {
+.container2 .nav-link {
   color: #fff;
   background-color: #922323;
 }
 
-.nav-link:hover {
+.container2 .nav-link:hover {
   color: rgb(238, 222, 222);
   background-color: #520000;
 }
@@ -71,11 +71,6 @@ ul {
   padding: 1em;
 }
 
-.company-info {
-  background: #252424;
-  position: relative;
-  vertical-align: middle;
-}
 .company-info {
   vertical-align: middle;
   text-align: center;
@@ -163,4 +158,17 @@ ul {
   .brand {
     text-align: left;
   }
+}
+
+.site-title a img {
+  height: 82px;
+  width: 160px;
+}
+
+.site-title {
+  border-radius: 0px;
+}
+
+.navbar .container {
+  margin-left: -80px;
 }
