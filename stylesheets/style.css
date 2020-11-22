@@ -255,6 +255,9 @@ nav ul .dropdown a.nav-link:hover::after {
   color: white;
   margin: 5px;
 }
+.summary {
+  margin-bottom: 10px;
+}
 
 /* .row3 h3 {
   border-style: solid;
