@@ -185,6 +185,7 @@ nav ul .dropdown a.nav-link:hover::after {
   background-color: rgb(255, 252, 249);
   margin: 0px;
   padding: 1px 0px 0px 2px;
+  font-size: 14px;
 }
 
 /* *search-box */
@@ -255,6 +256,10 @@ nav ul .dropdown a.nav-link:hover::after {
   margin: 5px;
 }
 
+/* .row3 h3 {
+  border-style: solid;
+  border-bottom: px;
+} */
 #try {
   background-color: rgb(107, 12, 12);
   transition: background-color 0.5s;
@@ -278,6 +283,22 @@ nav ul .dropdown a.nav-link:hover::after {
   justify-content: center;
   align-items: center;
 }
+.row4 {
+  height: 180px;
+  display: flex;
+  margin: 70px 200px;
+}
+
+.row4 p {
+  margin: 5px;
+}
+
+#pro {
+  width: 180px;
+  background-color: rgb(107, 12, 12);
+  color: white;
+}
+
 .home-section {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
@@ -954,4 +975,10 @@ h1 {
 }
 .meta {
   box-shadow: none !important;
+}
+
+.row3 h3 {
+  margin: 25px;
+  font-size: 40px;
+  color: rgb(107, 12, 12);
 }
