@@ -12,7 +12,7 @@
     <meta name="keywords" content="BD health, telehealth, Emergency, Healthcare blogs" />
     <meta name="author" content="Nazia shehnaz" />
     <link rel="icon" type="image/png" href="./images/titlelogo.png" />
-    <title>BD Health</title>
+    
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,7 +20,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./stylesheets/style.css">
     <link rel="stylesheet" href="./stylesheets/Dashboard.css">
-    <title>SignUp</title>
+    <title>Dashboard | BD Health</title>
 </head>
 <body>
 
@@ -61,20 +61,16 @@
         </script>
 
 <!--* header section starts -->
+<!--* header section starts -->
 <div class="header-section fixed-top">
     <!--* site-logo -->
 
-    <div id="logo">
-        <div class="site-title">
-            <a href="./index.html"><img src="./images/Artboard 2bd_health.png" /></a>
-        </div>
-    </div>
 
     <div>
 
         <nav class="navbar navbar-expand-lg navbar-custom">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.html">
                     <!-- <img src="http://placehold.it/150x50?text=Logo" alt=""> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -82,27 +78,31 @@
                     <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
+
                     <ul class="navbar-nav ml-auto">
+                        <!-- <li class="nav-item main-menu">
+                target="_blank" 
+                <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+              </li> -->
                         <div id="menuwrapper">
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">Dashboard</a>
+                                <a class="nav-link" href="./Dashboard.html">Dashboard</a>
                                 <i class="fas fa-caret-down"></i>
-                        
+
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="./Doctor/DocPortal.html">Doctor's Portal</a></li>
-                                        <li><a href="#">Patient's Portal</a></li>
+                                        <li><a href="./Patient/PatientPortal.html">Patient's Portal</a></li>
                                         <li><a href="#">Admin</a></li>
-                                        
+
                                     </ul>
                                 </div>
                             </li>
                         </div>
                         <div id="menuwrapper">
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="./BlogPage.html">Blog</a>
                                 <i class="fas fa-caret-down"></i>
-
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="#">Investigation and Diagonosis</a></li>
@@ -115,39 +115,50 @@
                                 </div>
                             </li>
                         </div>
-                        <div id="menuwrapper">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">Services</a>
-                                <i class="fas fa-caret-down"></i>
 
-                                <div class="dropdown-menu">
-                                    <ul>
-                                        <li><a href="#">Emergency tele health</a></li>
-                                        <li><a href="#">E-books and Magazines</a></li>
-                                        <li><a href="#">Book an ICU</a></li>
-                                        <li><a href="#">Blood Bank</a></li>
-                                        <li><a href="#">PPE/N-95 mask</a></li>
-                                    </ul>
+                        <!-- <div id="menuwrapper">
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#">Services</a>
+                  <i class="fas fa-caret-down"></i>
+
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="#">Emergency tele health</a></li>
+                      <li><a href="#">E-books and Magazines</a></li>
+                      <li><a href="#">Book an ICU</a></li>
+                      <li><a href="#">Blood Bank</a></li>
+                      <li><a href="#">PPE/N-95 mask</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </div> -->
+                        <!-- <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">Ask The Expert</a>
+                        </li> -->
+
+
+                        <li id="logo-list-item">
+                            <div id="logo">
+                                <div class="site-title">
+                                    <a href="./index.html"><img src="./images/Artboard 2bd_health.png" /></a>
                                 </div>
-                            </li>
-                        </div>
-                        <li class="nav-item main-menu">
-                            <a class="nav-link" href="#">Live Q/A</a>
+                            </div>
                         </li>
-                        <li class="nav-item main-menu">
+
+                        <!-- <li class="nav-item main-menu">
                             <a class="nav-link" href="#">Drug Store</a>
-                        </li>
+                        </li> -->
+
 
                         <li class="nav-item main-menu">
-                            <a class="nav-link" href="#">Find a Doctor</a>
+                            <a class="nav-link" href="./findadoc2.html">Find a Doctor</a>
                         </li>
+                        <!-- <li class="nav-item main-menu">
+                <a class="nav-link" href="#">BD Hospitals</a>
+              </li> -->
                         <li class="nav-item main-menu">
-                            <a class="nav-link" href="#">BD Hospitals</a>
+                            <a class="nav-link" href="./ContactUS.html">Contact</a>
                         </li>
-                        <li class="nav-item main-menu">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-
                     </ul>
 
                 </div>
@@ -160,8 +171,12 @@
             </div>
         </nav>
 
+        <!-- <div class="scrolling-notice">
+            <marquee>To call an ambulance immediately call 999</marquee>
+        </div> -->
     </div>
 </div>
+
 
         <br>
         <br>
@@ -170,7 +185,7 @@
         <br>
     <div class="container2">
         <!-- <h1 class="brand"><span>BDHealth</span> Dashboard</h1> -->
-        <h2>Create an Account</h2>
+        
         <div class="container2 inner-container2">
             <div class="row shadow bg-white rounded-lg p-3">
                 <div class="col-md-2">
@@ -222,7 +237,7 @@
                                         </p>
                                         <p id="email">
                                             <label>Email Address</label>
-                                            <input type="email" name="email">
+                                            <input id="email_id" type="email" name="email">
                                         </p>
                                         <p>
                                             <label>password</label>
@@ -340,7 +355,7 @@
     </div>
 
     <div class="container2">
-        <h2>Sign In</h2>
+        
         <div class="container2 inner-container2">
         <div class="row shadow bg-white rounded-lg p-3">
         <div class="wrapper">
@@ -429,15 +444,16 @@
                 <section class="footer-item">
                     <h3>Explore</h3>
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./Dashboard.html">Dashboard</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Live Q/A</a></li>
-                        <li><a href="#">Drug Store</a></li>
-                        <li><a href="#">Find a Doctor</a></li>
-                        <li><a href="#">BD Hospitals</a></li>
-                        <li><a href="#">About</a></li>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./Dashboard.html">Dashboard</a></li>
+                            <li><a href="./BlogPage.html">Blogs</a></li>
+                            <!-- <li><a href="#">Services</a></li> -->
+                            <!-- <li><a href="#">Ask The Expert</a></li> -->
+                            <!-- <li><a href="#">Drug Store</a></li> -->
+                            <li><a href="./findadoc2.html">Find a Doctor</a></li>
+                            <li><a href="./ContactUS.html">Contact</a></li>
+                        </ul>
                     </ul>
                 </section>
             </div>

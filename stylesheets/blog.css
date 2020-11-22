@@ -1,0 +1,288 @@
+@import "https://use.fontawesome.com/e5a67e9308.js";
+.navbar {
+  margin-bottom: 0;
+}
+section {
+  width: 100%;
+  float: left;
+}
+.under-banner {
+  position: absolute;
+  top: 380px;
+  left: 20px;
+  margin: 60px;
+}
+
+/* 
+The container box is relative so we can position stuff inside of it 
+*/
+.image-box {
+  position: relative;
+}
+
+.image-box__background,
+.image-box__overlay {
+  height: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* 
+The background image div sizes and positions the background itself.
+It's also at the bottom-most position in our "div stack" (z-index 1)
+
+We set the image url via a CSS custom property, that's set via the style attribute in our HTML
+*/
+.image-box__background {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: var(--image-url);
+
+  z-index: 1;
+}
+
+/* 
+The overlay div is just a colored element with some opacity.
+It's above the background image in our stack, so it appears to 
+darken the image 
+*/
+.image-box__overlay {
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 2;
+}
+
+/* 
+The content div is at the top of our stack. 
+We'd probably add some padding or flexbox properties here as well, 
+to place the content appropriately
+*/
+
+/* just for the demo */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 30px;
+}
+
+.banner-section {
+  /* background-image: url("../images//coronavirus.jpg"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    var(--image-url) center center;
+  /* z-index: 3; */
+  background-size: cover;
+  height: 400px;
+  left: 0;
+  position: absolute;
+  background-attachment: fixed;
+  top: 0;
+  background-position: 0;
+}
+.post-title-block {
+  padding: 100px 0;
+  z-index: 3;
+}
+.post-title-block h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.post-title-block li {
+  font-size: 20px;
+  color: #fff;
+}
+.image-block {
+  /* float: left; */
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  float: left;
+}
+/* .footer2-link {
+  float: left;
+  width: 100%;
+  background: #222222;
+  text-align: center;
+  padding: 30px;
+}
+.footer2-link a {
+  color: #a9fd00;
+  font-size: 18px;
+  text-transform: uppercase;
+} */
+.copyright {
+  margin: 0;
+  padding: 2px 0px;
+  padding-bottom: 7px;
+  text-align: center;
+  background-color: rgb(107, 12, 12);
+  color: white;
+  font-size: 14px;
+}
+.img-responsive {
+  height: auto;
+  width: 100%;
+  /* align-items: center; */
+}
+
+.img-rounded {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.comment-card {
+  background: #f8f1f1;
+  padding: 25px;
+  border: solid 1px rgb(218, 211, 211);
+  border-radius: 3px;
+}
+
+ul#pastcomments {
+  list-style-type: none;
+}
+ul#pastcomments li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f086";
+  font-size: 24pt;
+  color: rgb(117, 21, 21);
+  margin-left: -48px;
+  padding-right: 10px;
+  position: relative;
+  top: 8px;
+}
+ul#pastcomments li {
+  margin: 0 0 2em 0;
+  padding: 5px;
+}
+
+ul#pastcomments li span {
+  font-size: 80%;
+  color: rgb(117, 21, 21);
+  font-style: italic;
+}
+#txComment {
+  height: 200px;
+}
+
+/* footer only */
+
+footer {
+  background-color: black;
+
+  /* font-family: , sans-serif; */
+  padding: 40px 10px 100px 50px;
+  margin: 0px;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.8fr 0.8fr 1fr 1fr 1fr;
+}
+
+.footer-item {
+  float: left;
+  margin: 0 7.2% 0 0;
+}
+
+.footer-button {
+  color: white;
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  transition: 1s;
+  transition-delay: 0.2s;
+  padding: 14px;
+}
+
+.footer-button:after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  right: 13px;
+  background-color: white;
+  height: 1px;
+  width: 86px;
+  transition: 0.6s;
+}
+
+.footer-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.footer-button:hover:after {
+  width: 112px;
+  right: 0px;
+}
+
+footer h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 34px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+footer h2 {
+  font-weight: 500;
+  line-height: 2;
+  font-size: 15px;
+  color: #d1d1d1;
+  letter-spacing: 0.03em;
+  padding: 15px 0 0 0;
+}
+
+footer h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  padding-bottom: 9px;
+  letter-spacing: 0.03em;
+}
+
+footer h3.desktop {
+  padding-top: 30px;
+}
+
+footer ul {
+  line-height: 1.8;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  font-weight: 400;
+  font-size: 14px;
+  color: #d1d1d1;
+  letter-spacing: 0.03em;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: #d1d1d1;
+}
+
+footer a {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
+footer a:hover {
+  color: white;
+}

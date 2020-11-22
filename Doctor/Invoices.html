@@ -13,9 +13,8 @@
     <meta name="description" content="BD health care system blogs telehealth" />
     <meta name="keywords" content="BD health, telehealth, Emergency, Healthcare blogs" />
     <meta name="author" content="Nazia shehnaz" />
-    <link rel="icon" type="image/png" href="./images/titlelogo.png" />
-    <title>BD Health</title>
-
+    <link rel="icon" type="image/png" href="../images/titlelogo.png" />
+    <title>Doc Portal | BD Health</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -68,18 +67,13 @@
     <!--* header section starts -->
     <div class="header-section fixed-top">
         <!--* site-logo -->
-
-        <div id="logo">
-            <div class="site-title">
-                <a href="../index.html"><img src="../images/Artboard 2bd_health.png" /></a>
-            </div>
-        </div>
-
+    
+    
         <div>
-
+    
             <nav class="navbar navbar-expand-lg navbar-custom">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="../index.html">
                         <!-- <img src="http://placehold.it/150x50?text=Logo" alt=""> -->
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -87,16 +81,31 @@
                         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
+    
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item main-menu">
-                                <!-- target="_blank"  -->
-                                <a class="nav-link" href="../Dashboard.html">Dashboard</a>
-                            </li>
+                            <!-- <li class="nav-item main-menu">
+                    target="_blank" 
+                    <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+                  </li> -->
                             <div id="menuwrapper">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#">Blog</a>
+                                    <a class="nav-link" href="../Dashboard.html">Dashboard</a>
                                     <i class="fas fa-caret-down"></i>
-
+    
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="./DocPortal.html">Doctor's Portal</a></li>
+                                            <li><a href="../Patient/PatientPortal.html">Patient's Portal</a></li>
+                                            <li><a href="#">Admin</a></li>
+    
+                                        </ul>
+                                    </div>
+                                </li>
+                            </div>
+                            <div id="menuwrapper">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="../BlogPage.html">Blog</a>
+                                    <i class="fas fa-caret-down"></i>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a href="#">Investigation and Diagonosis</a></li>
@@ -109,41 +118,52 @@
                                     </div>
                                 </li>
                             </div>
-                            <div id="menuwrapper">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="../Dashboard.html">Services</a>
-                                    <i class="fas fa-caret-down"></i>
-
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            <li><a href="#">Emergency tele health</a></li>
-                                            <li><a href="#">E-books and Magazines</a></li>
-                                            <li><a href="#">Book an ICU</a></li>
-                                            <li><a href="#">Blood Bank</a></li>
-                                            <li><a href="#">PPE/N-95 mask</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                            <li class="nav-item main-menu">
-                                <a class="nav-link" href="../Dashboard.html">Live Q/A</a>
-                            </li>
-                            <li class="nav-item main-menu">
-                                <a class="nav-link" href=../Dashboard.html>Drug Store</a>
-                            </li>
-
-                            <li class="nav-item main-menu">
-                                <a class="nav-link" href="../Dashboard.html">Find a Doctor</a>
-                            </li>
-                            <li class="nav-item main-menu">
-                                <a class="nav-link" href="../Dashboard.html">BD Hospitals</a>
-                            </li>
-                            <li class="nav-item main-menu">
-                                <a class="nav-link" href="../Dashboard.html">About</a>
-                            </li>
-
+    
+                            <!-- <div id="menuwrapper">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#">Services</a>
+                      <i class="fas fa-caret-down"></i>
+    
+                      <div class="dropdown-menu">
+                        <ul>
+                          <li><a href="#">Emergency tele health</a></li>
+                          <li><a href="#">E-books and Magazines</a></li>
+                          <li><a href="#">Book an ICU</a></li>
+                          <li><a href="#">Blood Bank</a></li>
+                          <li><a href="#">PPE/N-95 mask</a></li>
                         </ul>
-
+                      </div>
+                    </li>
+                  </div> -->
+                            <!-- <li class="nav-item main-menu">
+                    <a class="nav-link" href="#">Ask The Expert</a>
+                  </li> -->
+    
+    
+                            <li id="logo-list-item">
+                                <div id="logo">
+                                    <div class="site-title">
+                                        <a href="../index.html"><img src="../images/Artboard 2bd_health.png" /></a>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <!-- <li class="nav-item main-menu">
+                        <a class="nav-link" href="#">Drug Store</a>
+                      </li> -->
+    
+    
+                            <li class="nav-item main-menu">
+                                <a class="nav-link" href="../findadoc2.html">Find a Doctor</a>
+                            </li>
+                            <!-- <li class="nav-item main-menu">
+                    <a class="nav-link" href="#">BD Hospitals</a>
+                  </li> -->
+                            <li class="nav-item main-menu">
+                                <a class="nav-link" href="../ContactUS.html">Contact</a>
+                            </li>
+                        </ul>
+    
                     </div>
                 </div>
                 <div class="search-box">
@@ -153,13 +173,13 @@
                     </a>
                 </div>
             </nav>
-
-            <div class="scrolling-notice">
+    
+            <!-- <div class="scrolling-notice">
                 <marquee>To call an ambulance immediately call 999</marquee>
-            </div>
+            </div> -->
         </div>
     </div>
-
+    
     <!--* header section ends -->
     <div class="content" style="transform: none; min-height: 31.6px;margin-top: 130px;">
         <div class="container-fluid" style="transform: none;">
@@ -206,18 +226,19 @@
                                                 <span>My Patients</span>
                                             </a>
                                         </li>
-                                        <hr>
-                                        <li>
-                                            <a href="schedule-timings.html">
-                                                <i class="fas fa-hourglass-start"></i>
-                                                <span>Schedule Timings</span>
-                                            </a>
-                                        </li>
+                                      
                                         <hr>
                                         <li>
                                             <a href="invoices.html">
                                                 <i class="fas fa-file-invoice"></i>
                                                 <span>Invoices</span>
+                                            </a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a href="schedule-timings.html">
+                                                <i class="fas fa-hourglass-start"></i>
+                                                <span>Schedule Timings</span>
                                             </a>
                                         </li>
                                         <hr>
@@ -258,7 +279,7 @@
                                         </li>
                                         <hr>
                                         <li>
-                                            <a href="index.html">
+                                            <a href="../index.html">
                                                 <i class="fas fa-sign-out-alt"></i>
                                                 <span>Logout</span>
                                             </a>
@@ -918,15 +939,16 @@
                 <section class="footer-item">
                     <h3>Explore</h3>
                     <ul>
+                    <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../Dashboard.html">Dashboard</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Live Q/A</a></li>
-                        <li><a href="#">Drug Store</a></li>
-                        <li><a href="#">Find a Doctor</a></li>
-                        <li><a href="#">BD Hospitals</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="../BlogPage.html">Blogs</a></li>
+                        <!-- <li><a href="#">Services</a></li> -->
+                        <!-- <li><a href="#">Ask The Expert</a></li> -->
+                        <!-- <li><a href="#">Drug Store</a></li> -->
+                        <li><a href="../findadoc2.html">Find a Doctor</a></li>
+                        <li><a href="../ContactUS.html">Contact</a></li>
+                    </ul>
                     </ul>
                 </section>
             </div>

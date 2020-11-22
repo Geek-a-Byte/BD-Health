@@ -13,8 +13,8 @@
     <meta name="description" content="BD health care system blogs telehealth" />
     <meta name="keywords" content="BD health, telehealth, Emergency, Healthcare blogs" />
     <meta name="author" content="Nazia shehnaz" />
-    <link rel="icon" type="image/png" href="./images/titlelogo.png" />
-    <title>BD Health</title>
+    <link rel="icon" type="image/png" href="../images/titlelogo.png" />
+    <title>Patient Portal | BD Health</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -65,102 +65,123 @@
     </script>
     <!-- End of Async Drift Code -->
 
-    <!--* header section starts -->
-    <div class="header-section fixed-top">
-        <!--* site-logo -->
+<!--* header section starts -->
+<div class="header-section fixed-top">
+    <!--* site-logo -->
 
-        <div id="logo">
-            <div class="site-title">
-                <a href="../index.html"><img src="../images/Artboard 2bd_health.png" /></a>
-            </div>
-        </div>
 
-        <div>
+    <div>
 
-            <nav class="navbar navbar-expand-lg navbar-custom">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <!-- <img src="http://placehold.it/150x50?text=Logo" alt=""> -->
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                        aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item main-menu">
-                                <!-- target="_blank"  -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <!-- <img src="http://placehold.it/150x50?text=Logo" alt=""> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                    <ul class="navbar-nav ml-auto">
+                        <!-- <li class="nav-item main-menu">
+                target="_blank" 
+                <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+              </li> -->
+                        <div id="menuwrapper">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link" href="../Dashboard.html">Dashboard</a>
-                            </li>
-                            <div id="menuwrapper">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#">Blog</a>
-                                    <i class="fas fa-caret-down"></i>
+                                <i class="fas fa-caret-down"></i>
 
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            <li><a href="#">Investigation and Diagonosis</a></li>
-                                            <li><a href="#">Clinical trials</a></li>
-                                            <li><a href="#">Research and Discovery</a></li>
-                                            <li><a href="#">Case study</a></li>
-                                            <li><a href="#">Survey</a></li>
-                                            <li><a href="#">Drug review</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="../Doctor/DocPortal.html">Doctor's Portal</a></li>
+                                        <li><a href="./PatientPortal.html">Patient's Portal</a></li>
+                                        <li><a href="#">Admin</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div id="menuwrapper">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="../BlogPage.html">Blog</a>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="#">Investigation and Diagonosis</a></li>
+                                        <li><a href="#">Clinical trials</a></li>
+                                        <li><a href="#">Research and Discovery</a></li>
+                                        <li><a href="#">Case study</a></li>
+                                        <li><a href="#">Survey</a></li>
+                                        <li><a href="#">Drug review</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+
+                        <!-- <div id="menuwrapper">
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#">Services</a>
+                  <i class="fas fa-caret-down"></i>
+
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="#">Emergency tele health</a></li>
+                      <li><a href="#">E-books and Magazines</a></li>
+                      <li><a href="#">Book an ICU</a></li>
+                      <li><a href="#">Blood Bank</a></li>
+                      <li><a href="#">PPE/N-95 mask</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </div> -->
+                        <!-- <li class="nav-item main-menu">
+                <a class="nav-link" href="#">Ask The Expert</a>
+              </li> -->
+
+
+                        <li id="logo-list-item">
+                            <div id="logo">
+                                <div class="site-title">
+                                    <a href="../index.html"><img src="../images/Artboard 2bd_health.png" /></a>
+                                </div>
                             </div>
-                            <div id="menuwrapper">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#">Services</a>
-                                    <i class="fas fa-caret-down"></i>
+                        </li>
 
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            <li><a href="#">Emergency tele health</a></li>
-                                            <li><a href="#">E-books and Magazines</a></li>
-                                            <li><a href="#">Book an ICU</a></li>
-                                            <li><a href="#">Blood Bank</a></li>
-                                            <li><a href="#">PPE/N-95 mask</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                            <li class="nav-item main-menu">
-                                <a class="nav-link" href="#">Live Q/A</a>
-                            </li>
-                            <li class="nav-item main-menu">
-                                <a class="nav-link" href="#">Drug Store</a>
-                            </li>
+                        <!-- <li class="nav-item main-menu">
+                    <a class="nav-link" href="#">Drug Store</a>
+                  </li> -->
 
-                            <li class="nav-item main-menu">
-                                <a class="nav-link" href="#">Find a Doctor</a>
-                            </li>
-                            <li class="nav-item main-menu">
-                                <a class="nav-link" href="#">BD Hospitals</a>
-                            </li>
-                            <li class="nav-item main-menu">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
 
-                        </ul>
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="../findadoc2.html">Find a Doctor</a>
+                        </li>
+                        <!-- <li class="nav-item main-menu">
+                <a class="nav-link" href="#">BD Hospitals</a>
+              </li> -->
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="../ContactUS.html">Contact</a>
+                        </li>
+                    </ul>
 
-                    </div>
                 </div>
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Type to search" />
-                    <a class="search-btn" href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div>
-            </nav>
-
-            <div class="scrolling-notice">
-                <marquee>To call an ambulance immediately call 999</marquee>
             </div>
-        </div>
-    </div>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search" />
+                <a class="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </nav>
 
-    <!--* header section ends -->
+        <!-- <div class="scrolling-notice">
+            <marquee>To call an ambulance immediately call 999</marquee>
+        </div> -->
+    </div>
+</div>
+
+<!--* header section ends -->
     <div class="content" style="transform: none; min-height: 31.6px;margin-top: 130px;">
         <div class="container-fluid" style="transform: none;">
 
@@ -180,7 +201,7 @@
                                         <img src="../images/injured_patient.jpg" alt="User Image">
                                     </a>
                                     <div class="profile-det-info">
-                                        <h3>Dr. Darren Elder</h3>
+                                        <h3> Robert Brown</h3>
 
                                         <h5 class="mb-0" style="color: whitesmoke;"><i class="fas fa-map-marker-alt"></i> Newyork, USA</h5>
                                     </div>
@@ -567,15 +588,16 @@
                 <section class="footer-item">
                     <h3>Explore</h3>
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./Dashboard.html">Dashboard</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Live Q/A</a></li>
-                        <li><a href="#">Drug Store</a></li>
-                        <li><a href="#">Find a Doctor</a></li>
-                        <li><a href="#">BD Hospitals</a></li>
-                        <li><a href="#">About</a></li>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../Dashboard.html">Dashboard</a></li>
+                        <li><a href="../BlogPage.html">Blogs</a></li>
+                        <!-- <li><a href="#">Services</a></li> -->
+                        <!-- <li><a href="#">Ask The Expert</a></li> -->
+                        <!-- <li><a href="#">Drug Store</a></li> -->
+                        <li><a href="../findadoc2.html">Find a Doctor</a></li>
+                        <li><a href="../ContactUS.html">Contact</a></li>
+                    </ul>
                     </ul>
                 </section>
             </div>

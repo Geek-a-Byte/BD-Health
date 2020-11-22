@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table tr {
+  border-style: solid;
+  border-color: rgb(150, 137, 137);
+  border-width: 0.1px;
+  overflow-x: hidden;
+}
+table td {
+  padding: 5px;
+}
+table {
+  margin-top: 10px;
+}
+.content {
+  margin: 125px 10px 10px 10px;
+}
+.card-header {
+  background-color: black;
+  color: white;
+}
+.card {
+  margin: 10px;
+}
+.doctor-img img {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  margin-right: 95px;
+}
+.doc-department img {
+  height: 25px;
+  width: 25px;
+  margin-right: 8px;
+}
+.doc-department {
+  font-size: 18px;
+}
+.doc-name a {
+  text-decoration: none;
+  color: black;
+  margin-right: 40px;
+}
+.rating #filled {
+  color: rgb(245, 224, 105);
+}
+#notfilled {
+  color: rgb(32, 30, 18);
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 1.5em;
+}
+.doc-info-right {
+  /*top right bottom left*/
+  /* float: right; */
+  margin-left: 170px;
+  /* margin-left: 100px; */
+}
+.clini-infos {
+  /*top right bottom left*/
+  float: right;
+  margin: 0 0 0 30px;
+}
+
+.clini-infos li {
+  list-style-type: none;
+  padding: 5px;
+}
+.clini-infos li i {
+  padding: 5px;
+}
+.clinic-booking {
+  display: flex;
+  float: right;
+  width: 300px;
+}
+.clinic-booking button {
+  margin: 5px;
+}
+div.search-filter {
+  /* position: fixed; */
+  width: 100%;
+}
+::placeholder {
+  color: rgb(194, 180, 180);
+}
+
+.btn-primary {
+  background-color: rgb(107, 12, 12);
+  border: none;
+}
+
+.col-sm-3half,
+.col-sm-8half {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-sm-2 {
+  -ms-flex: 0 0 50.666667%;
+  flex: 0 0 50.666667%;
+  max-width: 50.666667%;
+}
+
+@media (min-width: 768px) {
+  .col-sm-3half,
+  .col-sm-8half {
+    float: left;
+  }
+  .col-sm-3half {
+    width: 29.16666667%;
+  }
+  .col-sm-8half {
+    width: 70.83333333%;
+  }
+}

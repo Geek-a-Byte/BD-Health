@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./stylesheets/findADoc.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="icon" type="image/png" href="./images/titlelogo.png" />
+    <title>Find A Doctor | BD Health</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        !(function () {
+            var t = (window.driftt = window.drift = window.driftt || []);
+            if (!t.init) {
+                if (t.invoked)
+                    return void (window.console && console.error && console.error("Drift snippet included twice."));
+                (t.invoked = !0),
+                    (t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on",]),
+                    (t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }),
+                    t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }),
+                    (t.load = function (t) {
+                        var e = 3e5,
+                            n = Math.ceil(new Date() / e) * e,
+                            o = document.createElement("script");
+                        (o.type = "text/javascript"),
+                            (o.async = !0),
+                            (o.crossorigin = "anonymous"),
+                            (o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js");
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    });
+            }
+        })();
+        drift.SNIPPET_VERSION = "0.3.1";
+        drift.load("frnhsw47f8xk");
+    </script>
+    <!-- End of Async Drift Code -->
+    
+<!--* header section starts -->
+<div class="header-section fixed-top">
+    <!--* site-logo -->
+
+
+    <div>
+
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <!-- <img src="http://placehold.it/150x50?text=Logo" alt=""> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                    <ul class="navbar-nav ml-auto">
+                        <!-- <li class="nav-item main-menu">
+                target="_blank" 
+                <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+              </li> -->
+                        <div id="menuwrapper">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+                                <i class="fas fa-caret-down"></i>
+
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="./Doctor/DocPortal.html">Doctor's Portal</a></li>
+                                        <li><a href="./Patient/PatientPortal.html">Patient's Portal</a></li>
+                                        <li><a href="#">Admin</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div id="menuwrapper">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="./BlogPage.html">Blog</a>
+                                <i class="fas fa-caret-down"></i>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="#">Investigation and Diagonosis</a></li>
+                                        <li><a href="#">Clinical trials</a></li>
+                                        <li><a href="#">Research and Discovery</a></li>
+                                        <li><a href="#">Case study</a></li>
+                                        <li><a href="#">Survey</a></li>
+                                        <li><a href="#">Drug review</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+
+                        <!-- <div id="menuwrapper">
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#">Services</a>
+                  <i class="fas fa-caret-down"></i>
+
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="#">Emergency tele health</a></li>
+                      <li><a href="#">E-books and Magazines</a></li>
+                      <li><a href="#">Book an ICU</a></li>
+                      <li><a href="#">Blood Bank</a></li>
+                      <li><a href="#">PPE/N-95 mask</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </div> -->
+                        <!-- <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">Ask The Expert</a>
+                        </li> -->
+
+
+                        <li id="logo-list-item">
+                            <div id="logo">
+                                <div class="site-title">
+                                    <a href="./index.html"><img src="./images/Artboard 2bd_health.png" /></a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- <li class="nav-item main-menu">
+                            <a class="nav-link" href="#">Drug Store</a>
+                        </li> -->
+
+
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="./findadoc2.html">Find a Doctor</a>
+                        </li>
+                        <!-- <li class="nav-item main-menu">
+                <a class="nav-link" href="#">BD Hospitals</a>
+              </li> -->
+                        <li class="nav-item main-menu">
+                            <a class="nav-link" href="./ContactUS.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search" />
+                <a class="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </nav>
+
+      
+    </div>
+</div>
+
+<!--* header section ends -->
+
+    <div class="content">
+        <div class="container-fluid">
+
+            <div class="row" style="display: flex;">
+                <div class="col-md-12 col-lg-4 col-xl-3 theiaStickySidebar">
+
+                    <!-- Search Filter -->
+                    <div class="card search-filter">
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">Search Filter</h4>
+                        </div>
+                        <div class="card-body">
+                           
+                            <div class="filter-widget">
+                                <div>
+                                    <p class="name_check" style="margin-bottom: 5px; ">Name
+                                    </p>
+                                    <input type="text" name="Name" style="margin-bottom:10px; width: 100%;" placeholder="Doctor's Name" id="myInput" onkeyup="searchFun()">
+                                </div>
+                                <div>
+                                    <p class="name_check" style="margin-bottom: 5px;">Location
+                                    </p>
+                                    <input type="text" name="Name" style="margin-bottom:10px; width: 100%;" placeholder="Based on your Location">
+                                </div>
+                                <h4>Gender</h4>
+                                <div>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="gender_type" checked>
+                                        <span class="checkmark"></span> Male Doctor
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="gender_type">
+                                        <span class="checkmark"></span> Female Doctor
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-widget">
+                                <h4>Select Specialist</h4>
+                                <div>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="select_specialist" checked>
+                                        <span class="checkmark"></span> Urology
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="select_specialist" checked>
+                                        <span class="checkmark"></span> Neurology
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="select_specialist">
+                                        <span class="checkmark"></span> Dentist
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="select_specialist">
+                                        <span class="checkmark"></span> Orthopedic
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="select_specialist">
+                                        <span class="checkmark"></span> Cardiologist
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="select_specialist">
+                                        <span class="checkmark"></span> Cardiologist
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn-search">
+                                <button type="button" class="btn btn-primary" style="width: 100%;"> search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Search Filter -->
+                </div>
+
+                <div class="col-md-9" >
+                <div style="overflow-x:auto;">
+                    <div class="table-responsive" >
+                            <table id="myTable">
+                            
+                                <tr>
+                        
+                                          <div class="doc-info-left" style="display: flex;" >
+                                            <td style="margin-right: 20px;">
+                                            <div class="doctor-img">
+                                                <a href="doctor-profile.html">
+                                                    <img src="./images/doctor-thumb-01.jpg" class="img-fluid" alt="User Image">
+                                                </a>
+                                            </div>
+                                            </td>
+                                            
+                                               
+                                            <div class="doc-info-cont">
+                                                <td>
+                                                    <h4 class="doc-name"><a href="doctor-profile.html">Dr. Ruby Perrin</a></h4>
+                                                </td>
+                                                <td>
+                                                <p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
+                                                <h5 class="doc-department"><img src="./images/dentist.png" class="img-fluid"
+                                                        alt="Speciality">Dentist</h5>
+                                                <br>
+                            
+                            
+                                                <div class="rating">
+                                                    <i id="filled" class="fas fa-star filled"></i>
+                                                    <i id="filled" class="fas fa-star filled"></i>
+                                                    <i id="filled" class="fas fa-star filled"></i>
+                                                    <i id="filled" class="fas fa-star filled"></i>
+                                                    <i id="#notfilled" class="fas fa-star"></i>
+                                                    <span class="d-inline-block average-rating">(17)</span>
+                                                </div>
+                                                <div class="clinic-details">
+                                                    
+                                                    <p class="doc-location"><i class="fas fa-map-marker-alt"></i> Florida, USA
+                                                    </p>
+                            
+                                                </div>
+                                                </td>
+                                               
+                            
+                                            </div>
+                                            
+                                        </div>
+                                    
+                                        <td>
+                                        <div class="doc-info-right">
+                                            <div class="clini-infos">
+                                                <ul>
+                                                    <li><i class="far fa-thumbs-up"></i> 98%</li>
+                                                    <li><i class="far fa-comment"></i> 17 Feedback</li>
+                                                    <li><i class="fas fa-map-marker-alt"></i> Florida, USA</li>
+                                                    <li><i class="far fa-money-bill-alt"></i> $300 - $1000 <i class="fas fa-info-circle"
+                                                            data-toggle="tooltip" title="Lorem Ipsum"></i> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="clinic-booking">
+                                                <button type="button" class="btn btn-primary"> View Profile</button>
+                                                <button type="button" class="btn btn-primary"> Book Appointment</button>
+                            
+                                            </div>
+                                        </div>
+                                    </td>
+                            
+                                </tr>
+                            
+                                <tr>
+                            
+                                  
+                                    <div class="doc-info-left" style="display: flex;">
+                                        <td>
+
+                                       
+                                        <div class="doctor-img">
+                                            <a href="doctor-profile.html">
+                                                <img src="./images/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
+                                            </a>
+                                        </div>
+                                        </td>
+                                        
+                                        <div class="doc-info-cont">
+                                            <td>
+                                            <h4 class="doc-name"><a href="doctor-profile.html">Dr. Darren Elder</a></h4>
+                                            </td>
+                                            <td>
+                                            <p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
+                                            <h5 class="doc-department"><img src="./images/dentist.png" class="img-fluid" alt="Speciality">Dentist</h5>
+                                            <br>
+                                           
+                                       
+                                            <div class="rating">
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="#notfilled" class="fas fa-star"></i>
+                                                <span class="d-inline-block average-rating">(17)</span>
+                                            </div>
+                                            <div class="clinic-details">
+                                                <p class="doc-location"><i class="fas fa-map-marker-alt"></i> Florida, USA
+                                                </p>
+                                    
+                                            </div>
+                                    
+                                        </div>
+                                    </div>
+                                    </td>
+                                <td>
+                                    <div class="doc-info-right">
+                                        <div class="clini-infos">
+                                            <ul>
+                                                <li><i class="far fa-thumbs-up"></i> 98%</li>
+                                                <li><i class="far fa-comment"></i> 17 Feedback</li>
+                                                <li><i class="fas fa-map-marker-alt"></i> Florida, USA</li>
+                                                <li><i class="far fa-money-bill-alt"></i> $300 - $1000 <i class="fas fa-info-circle" data-toggle="tooltip"
+                                                        title="Lorem Ipsum"></i> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="clinic-booking">
+                                            <button type="button" class="btn btn-primary"> View Profile</button>
+                                            <button type="button" class="btn btn-primary"> Book Appointment</button>
+                                    
+                                        </div>
+                                    </div>
+
+                                </td>
+                            
+                                </tr>
+                                <tr>
+                                
+                                
+                                    <div class="doc-info-left" style="display: flex;">
+                                        <td>
+                                
+                                
+                                           <div class="doctor-img">
+                                            <a href="doctor-profile.html">
+                                                <img src="./images/doctor-thumb-03.jpg" class="img-fluid" alt="User Image">
+                                            </a>
+                                        </div>
+                                        </td>
+                                
+                                        <div class="doc-info-cont">
+                                            <td>
+                                                <h4 class="doc-name"><a href="doctor-profile.html">Dr. Sofia Brient</a></h4>
+                                            </td>
+                                            <td>
+                                            <p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
+                                            <h5 class="doc-department"><img src="./images/urology.png" class="img-fluid" alt="Speciality">Urology</h5>
+                                            <br>
+                                            
+                                            
+                                            <div class="rating">
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="#notfilled" class="fas fa-star"></i>
+                                                <span class="d-inline-block average-rating">(17)</span>
+                                            </div>
+                                            <div class="clinic-details">
+                                                <p class="doc-location"><i class="fas fa-map-marker-alt"></i> Florida, USA
+                                                </p>
+                                            
+                                            </div>
+                                             </td>
+                                        </div>
+                                    </div>
+                                  
+                                    <td>
+                                        <div class="doc-info-right">
+                                            <div class="clini-infos">
+                                                <ul>
+                                                    <li><i class="far fa-thumbs-up"></i> 98%</li>
+                                                    <li><i class="far fa-comment"></i> 17 Feedback</li>
+                                                    <li><i class="fas fa-map-marker-alt"></i> Florida, USA</li>
+                                                    <li><i class="far fa-money-bill-alt"></i> $300 - $1000 <i class="fas fa-info-circle" data-toggle="tooltip"
+                                                            title="Lorem Ipsum"></i> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="clinic-booking">
+                                                <button type="button" class="btn btn-primary"> View Profile</button>
+                                                <button type="button" class="btn btn-primary"> Book Appointment</button>
+                                        
+                                            </div>
+                                        </div>
+                                
+                                    </td>
+                                
+                                </tr>
+                            
+
+                                <tr>
+                                
+                                
+                                    <div class="doc-info-left" style="display: flex;">
+                                        <td>
+                                
+                                
+                                           <div class="doctor-img">
+                                        <a href="doctor-profile.html">
+                                            <img src="./images/doctor-thumb-04.jpg" class="img-fluid" alt="User Image">
+                                        </a>
+                                        </div>
+                                        </td>
+                                
+                                        <div class="doc-info-cont">
+                                            <td>
+                                                <h4 class="doc-name"><a href="doctor-profile.html">Dr. Deborah Angel</a></h4>
+                                            </td>
+                                            <td>
+                                        <p class="doc-speciality">MDS - Periodontology and Oral Implantology, BDS</p>
+                                        <h5 class="doc-department"><img src="./images/cardio.png" class="img-fluid" alt="Speciality">Cardiology</h5>
+                                        <br>
+                                            
+                                            <div class="rating">
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="filled" class="fas fa-star filled"></i>
+                                                <i id="#notfilled" class="fas fa-star"></i>
+                                                <span class="d-inline-block average-rating">(17)</span>
+                                            </div>
+                                            <div class="clinic-details">
+                                                <p class="doc-location"><i class="fas fa-map-marker-alt"></i> Florida, USA
+                                                </p>
+                                            
+                                            </div>
+                                             </td>
+                                        </div>
+                                    </div>
+                                  
+                                    <td>
+                                        <div class="doc-info-right">
+                                            <div class="clini-infos">
+                                                <ul>
+                                                    <li><i class="far fa-thumbs-up"></i> 98%</li>
+                                                    <li><i class="far fa-comment"></i> 17 Feedback</li>
+                                                    <li><i class="fas fa-map-marker-alt"></i> Florida, USA</li>
+                                                    <li><i class="far fa-money-bill-alt"></i> $300 - $1000 <i class="fas fa-info-circle" data-toggle="tooltip"
+                                                            title="Lorem Ipsum"></i> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="clinic-booking">
+                                                <button type="button" class="btn btn-primary"> View Profile</button>
+                                                <button type="button" class="btn btn-primary"> Book Appointment</button>
+                                        
+                                            </div>
+                                        </div>
+                                
+                                    </td>
+                                
+                                </tr>
+                            
+                            
+                            </table>
+                    </div>
+               
+                </div>
+                </div>
+              
+               
+            </div>
+
+        </div>
+    
+    </div>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-site-header">
+                <section class="footer-item">
+                    <h1>BD Health</h1>
+    
+                    <h2>
+                        We dream to shape the future of the healthcare system in BD.<br />
+                    </h2>
+                    <b style="color:blanchedalmond; font-size:18px">For the people . Of the people . By the people.</b>
+                    <br><br>
+                </section>
+            </div>
+    
+            <div class="explore">
+                <section class="footer-item">
+                    <h3>Explore</h3>
+                    <ul>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./Dashboard.html">Dashboard</a></li>
+                        <li><a href="./BlogPage.html">Blogs</a></li>
+                        <!-- <li><a href="#">Services</a></li> -->
+                        <!-- <li><a href="#">Ask The Expert</a></li> -->
+                        <!-- <li><a href="#">Drug Store</a></li> -->
+                        <li><a href="./findadoc2.html">Find a Doctor</a></li>
+                        <li><a href="./ContactUS.html">Contact</a></li>
+                    </ul>
+                    </ul>
+                </section>
+            </div>
+    
+            <div class="footer-contact-visit-email">
+                <section class="footer-item">
+    
+                    <h3><i class="fas fa-envelope"></i> Email Us</h3>
+                    <a href="mailto:BDHealth@gmail.com">
+                        <p>BDHealth@gmail.com</p>
+                    </a>
+                    <br>
+                    <h3><i class="fas fa-phone"></i> Contact Us</h3>
+                    <p>+880192894835</p>
+    
+                </section>
+            </div>
+    
+            <div class="visit-us">
+                <section class="footer-item">
+                    <h3><i class="fas fa-map-marker-alt"></i> Visit Us</h3>
+                    <p>32,Mirpur Road<br>Oriental Log cabin<br>
+                        NewMarket,Dhaka-1205</p>
+    
+                </section>
+            </div>
+    
+            <div class="social-media-section">
+                <section class="footer-item">
+                    <h3>Follow</h3>
+                    <div class="social-media" style="font-size: 22px; color:white"><a href="#"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a></div>
+                    <br>
+                    <h3>Share</h3>
+                    <div class="social-media" style="font-size: 22px; color:white"><a href="#"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a></div>
+    
+                </section>
+            </div>
+    
+    
+        </div>
+    
+    </footer>
+    <div>
+        <p class="copyright">
+            © 2020 Envoy. All Rights Reserved.</p>
+    </div>
+    <script>
+        const searchFun = () => {
+                let filter = document.getElementById('myInput').value.toUpperCase();
+                let myTable = document.getElementById('myTable');
+                console.log(myTable);
+                let tr = myTable.getElementsByTagName('tr');
+                console.log('tr');
+                for (var i = 0; i < tr.length; i++) {
+                    let td = tr[i].getElementsByTagName('td')[1];
+                    
+                    console.log('td');
+                    if (td) {
+                        let textValue = td.textContent || td.innerHTML;
+                        if (textValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        }
+                        else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+    </script>
+</body>
+
+</html>

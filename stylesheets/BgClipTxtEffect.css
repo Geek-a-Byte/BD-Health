@@ -37,8 +37,8 @@ body {
 
 .box-with-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 5%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
@@ -58,7 +58,6 @@ body {
   }
   .hero-section {
     height: 200px;
-
     background-position: center -50px;
     background-size: 400px 200px;
     background-repeat: no-repeat;
@@ -91,5 +90,40 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
   }
 }

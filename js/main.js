@@ -1,7 +1,6 @@
-
   const username= document.getElementById('username');
   const patientusername= document.getElementById('patient-username');
-  const emailId= document.getElementById('email_id');
+  const email= document.getElementById('email_id');
   const patientemailId= document.getElementById('patient-email');
   const password= document.getElementById('password');
   const patientpassword= document.getElementById('patient-password');
@@ -17,8 +16,7 @@
 
   addUserBtn.addEventListener('click',(e)=>{
          e.preventDefault();
-           database.ref('/Doctors/'+username.value).set({
-         
+           database.ref('/Doctors/'+username.value).set({    
            username: username.value,           
            role:role.value,           
            password: password.value,
@@ -26,13 +24,14 @@
            designation: designation.value, 
            contactno: contactno.value,
            address:address.value,
-           email:  emailId.value,
-
+           email:  email.value,
          });
          
        window.location.reload()
         
   });
+
+
 
    addPatientBtn.addEventListener('click',(e)=>{
          e.preventDefault();
@@ -41,7 +40,7 @@
            username: patientusername.value,           
            role:patientrole.value,           
            password: patientpassword.value,
-          //  email: patientemailId.value,
+        
 
          });
          

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type=""
+        href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+        color="#111" />
+
+
+    <title>CodePen - Text animation with Snap SVG</title>
+
+
+
+
+    <style>
+        #container {
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+
+
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+</head>
+
+<body translate="no">
+    <link href='//fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
+    <div id="container">
+        <svg xmlns="http://www.w3.org/2000/svg" id="logo" viewBox="0 0 1252 600" width="250px">
+            <path fill="none"
+                d="M531.3 11.2S520.6.5 509.5.5c-11 0-25.4 11.3-25.4 11.3L11 360s-16 12-7.4 24c8.8 12.2 25.5 1.5 25.5 1.5L499 112s6.6-4.2 10.3-4c3 .2 7.7 4 7.7 4l283 229s4 3 6 3c2.7.2 7.4-3.3 7.4-3.3l210-145.4s2.2-1.7 3.6-1.7c1 0 3.4 1.7 3.4 1.7l189.3 144.5s15.8 12.8 27.2.3c11-12-4-27-4-27l-196.7-181s-7.3-7.5-15.8-8c-8.6-.4-19.8 7.8-19.8 7.8l-196.2 122s-5.5 4-8.6 4c-2.6-.3-6.5-4-6.5-4z" />
+        </svg>
+        <!-- me -->
+        <div style="font-family:'Dosis'; font-weight:bold; color:#888; text-align:center;margin-top:20px">made with
+            <span style="color:rgb(199, 59, 84)">&#9829;</span> by <a
+                style="color:#999;text-decoration:none;border-bottom:1px dashed #555"
+                href="http://www.alticreation.com/en" title="front end developer" target="_blank">alticreation</a></div>
+
+        <div id="tryAgain"
+            style="text-decoration:underline;font-family:'Dosis'; font-weight:bold; color:#000; text-align:center;margin-top:10px;cursor:pointer">
+            try again
+        </div>
+    </div>
+    <script
+        src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js'></script>
+
+    <script id="rendered-js">
+        window.onload = play();
+        document.getElementById('tryAgain').addEventListener('click', () => { play(); });
+
+        function play() {
+            var blue = '#2980b9';
+            var l = Snap('#logo');
+            var p = l.select('path');
+            l.clear();
+            l.append(p);
+
+            p.attr({
+                fill: blue,
+                stroke: '#0066CC'
+            });
+
+
+            setTimeout(function () {
+                // modify this one line below, and see the result !
+                var logoTitle = 'alticreation';
+                var logoRandom = '';
+                var logoTitleContainer = l.text(0, '98%', '');
+                var possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
+                logoTitleContainer.attr({
+                    fontSize: 280,
+                    fontFamily: 'Dosis',
+                    fontWeight: '600'
+                });
+
+
+                function generateRandomTitle(i, logoRandom) {
+                    setTimeout(function () {
+                        logoTitleContainer.attr({ text: logoRandom });
+                    }, i * 70);
+                }
+
+                for (var i = 0; i < logoTitle.length + 1; i++) {
+                    if (window.CP.shouldStopExecution(0)) break;
+                    logoRandom = logoTitle.substr(0, i);
+                    for (var j = i; j < logoTitle.length; j++) {
+                        if (window.CP.shouldStopExecution(1)) break;
+                        logoRandom += possible.charAt(Math.floor(Math.random() * possible.length));
+                    } window.CP.exitedLoop(1);
+                    generateRandomTitle(i, logoRandom);
+                    logoRandom = '';
+                } window.CP.exitedLoop(0);
+
+            }, 500);
+
+        }
+//# sourceURL=pen.js
+    </script>
+
+
+
+    <script
+        src="https://static.codepen.io/assets/editor/iframe/iframeRefreshCSS-e03f509ba0a671350b4b363ff105b2eb009850f34a2b4deaadaa63ed5d970b37.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD Health</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/AskTheExpert.css">
+    <link rel="icon" type="image/png" href="./images/titlelogo.png" />
+</head>
+<body>
+    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        !(function () {
+            var t = (window.driftt = window.drift = window.driftt || []);
+            if (!t.init) {
+                if (t.invoked)
+                    return void (window.console && console.error && console.error("Drift snippet included twice."));
+                (t.invoked = !0),
+                    (t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on",]),
+                    (t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }),
+                    t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }),
+                    (t.load = function (t) {
+                        var e = 3e5,
+                            n = Math.ceil(new Date() / e) * e,
+                            o = document.createElement("script");
+                        (o.type = "text/javascript"),
+                            (o.async = !0),
+                            (o.crossorigin = "anonymous"),
+                            (o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js");
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    });
+            }
+        })();
+        drift.SNIPPET_VERSION = "0.3.1";
+        drift.load("frnhsw47f8xk");
+    </script>
+    <!-- End of Async Drift Code -->
+    
+    <!--* header section starts -->
+    <div class="header-section fixed-top">
+        <!--* site-logo -->
+    
+    
+        <div>
+    
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">
+                        <!-- <img src="http://placehold.it/150x50?text=Logo" alt=""> -->
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+    
+                        <ul class="navbar-nav ml-auto">
+                            <!-- <li class="nav-item main-menu">
+                        target="_blank" 
+                        <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+                      </li> -->
+                            <div id="menuwrapper">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+                                    <i class="fas fa-caret-down"></i>
+    
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="./Doctor/DocPortal.html">Doctor's Portal</a></li>
+                                            <li><a href="./Patient/PatientPortal.html">Patient's Portal</a></li>
+                                            <li><a href="#">Admin</a></li>
+    
+                                        </ul>
+                                    </div>
+                                </li>
+                            </div>
+                            <div id="menuwrapper">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="./BlogPage.html">Blog</a>
+                                    <i class="fas fa-caret-down"></i>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="#">Investigation and Diagonosis</a></li>
+                                            <li><a href="#">Clinical trials</a></li>
+                                            <li><a href="#">Research and Discovery</a></li>
+                                            <li><a href="#">Case study</a></li>
+                                            <li><a href="#">Survey</a></li>
+                                            <li><a href="#">Drug review</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </div>
+    
+                            <!-- <div id="menuwrapper">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link" href="#">Services</a>
+                          <i class="fas fa-caret-down"></i>
+        
+                          <div class="dropdown-menu">
+                            <ul>
+                              <li><a href="#">Emergency tele health</a></li>
+                              <li><a href="#">E-books and Magazines</a></li>
+                              <li><a href="#">Book an ICU</a></li>
+                              <li><a href="#">Blood Bank</a></li>
+                              <li><a href="#">PPE/N-95 mask</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </div> -->
+                            <li class="nav-item main-menu">
+                                <a class="nav-link" href="#">Ask The Expert</a>
+                            </li>
+    
+    
+                            <li id="logo-list-item">
+                                <div id="logo">
+                                    <div class="site-title">
+                                        <a href="./index.html"><img src="./images/Artboard 2bd_health.png" /></a>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <li class="nav-item main-menu">
+                                <a class="nav-link" href="#">Drug Store</a>
+                            </li>
+    
+    
+                            <li class="nav-item main-menu">
+                                <a class="nav-link" href="./findadoc2.html">Find a Doctor</a>
+                            </li>
+                            <!-- <li class="nav-item main-menu">
+                        <a class="nav-link" href="#">BD Hospitals</a>
+                      </li> -->
+                            <li class="nav-item main-menu">
+                                <a class="nav-link" href="./ContactUS.html">About</a>
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div>
+                <div class="search-box">
+                    <input class="search-txt" type="text" name="" placeholder="Type to search" />
+                    <a class="search-btn" href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </nav>
+    
+            <!-- <div class="scrolling-notice">
+                    <marquee>To call an ambulance immediately call 999</marquee>
+                </div> -->
+        </div>
+    </div>
+    
+    <!--* header section ends -->
+
+    <div class="comment-card">
+        <h2 class="card-header">Ask a Question:</h2>
+    
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <div style="display: flex;">
+                        <!-- /*top right bottom left*/ -->
+                        <div style="padding-right: 12px;">
+                            <p>
+                            <h5>Name</h5>
+                            </p>
+                            <p style="margin-top: -2px;">
+                                <input id="QuesName" type="text" name="name" maxlength="50" required>
+                            </p>
+                        </div>
+    
+                        <!-- <div  style="padding-right: 10px;">
+                                                        <p>
+                                                            <h5>Email </h5>
+                                                        </p>
+                                                        <p  style="margin-top: -2px;">
+                                                            <input id="commentoremailid" type="email" name="email"  required>
+                                                        </p>
+                                                      </div> -->
+    
+                    </div>
+    
+                    <textarea id="txQues" class="form-control" rows="3" required></textarea>
+                </div>
+                <button type="submit" id="submitQuestion" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    
+    </div>
+    <div class="comment-card" id="allcomments">
+        <h2>Questions</h2>
+        <!-- we will show all the past commentsm here -->
+        <ul id="pastques">
+            <ul class="replyToPastQuestions">
+
+            </ul>
+        </ul>
+
+    </div>
+    <div id="replyText" style="display: none;">
+        <p>
+        <h5>Name</h5>
+        </p>
+        <p style="margin-top: -2px;">
+            <input id="AnsName" type="text" name="name" maxlength="50" required>
+        </p>
+        <textarea id="txAns" class="form-control" rows="3" required></textarea>
+        <button type="submit" id="submitAns" class="btn btn-primary">Submit</button>
+        <button type="cancel" id="cancel" class="btn btn-primary">Cancel</button>
+    </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script src="./js/Questions.js"></script>
+</body>
+</html>

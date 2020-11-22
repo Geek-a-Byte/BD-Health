@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type=""
+        href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+        color="#111" />
+
+
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>CodePen - Thumbnail to fullscreen page transition</title>
+
+    <link rel="stylesheet" media="screen"
+        href="https://static.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+
+
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type=""
+        href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+        color="#111" />
+
+
+
+
+    <title>CodePen - Thumbnail to fullscreen page transition</title>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+    <style>
+        html {
+            font-size: 15px;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+        }
+
+        body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .referer-warning {
+            background: black;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            padding: 0.75em;
+            color: white;
+            text-align: center;
+            font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+            line-height: 1.2;
+            font-size: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .referer-warning h1 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .referer-warning a {
+            color: #56bcf9;
+        }
+
+        /* $linkColorOnBlack */
+    </style>
+</head>
+
+<body class="">
+    <div class="referer-warning">
+        <h1>⚠️ Do not enter passwords or personal information on this page. ⚠️</h1>
+        This is a code demo posted by a web developer on <a href="https://codepen.io">codepen.io</a>.
+        <br />
+        A referer from CodePen is required to render this page view, and your browser is not sending one (<a
+            href="https://blog.codepen.io/2017/10/05/regarding-referer-headers/" target="_blank">more details</a>).</h1>
+    </div>
+
+    <div id="result-iframe-wrap" role="main">
+
+        <iframe id="result" srcdoc="
+<!DOCTYPE html>
+<html lang=&quot;en&quot; >
+
+<head>
+
+  <meta charset=&quot;UTF-8&quot;>
+  
+<link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
+<meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
+
+<link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
+
+<link rel=&quot;mask-icon&quot; type=&quot;&quot; href=&quot;https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot; color=&quot;#111&quot; />
+
+
+  <title>CodePen - Thumbnail to fullscreen page transition</title>
+  
+  
+  
+  
+<style>
+@-webkit-keyframes up-in {
+  from {
+    opacity: 0;
+    bottom: 0%;
+  }
+  to {
+    opacity: 1;
+    bottom: 50%;
+  }
+}
+@keyframes up-in {
+  from {
+    opacity: 0;
+    bottom: 0%;
+  }
+  to {
+    opacity: 1;
+    bottom: 50%;
+  }
+}
+.fill {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body,
+html {
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+.flex-row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+  position: relative;
+}
+.container.no-scroll {
+  overflow: hidden;
+}
+.page {
+  width: 80%;
+  padding: 10px;
+  background-color: white;
+}
+@media (max-width: 600px) {
+  .page {
+    width: 90%;
+  }
+}
+.grid {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.grid .grid-item {
+  width: 33%;
+  position: relative;
+}
+.grid .grid-item:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+@media (max-width: 600px) {
+  .grid .grid-item {
+    width: 50%;
+  }
+}
+.box {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  overflow: hidden;
+  cursor: pointer;
+}
+.box img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+.box.selected {
+  opacity: 0;
+}
+.box.on-top {
+  cursor: default;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  box-shadow: 2px 2px 19px -2px rgba(0, 0, 0, 0.44);
+}
+.box.image-out img {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.content {
+  position: absolute;
+  padding: 20px 40px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.show .content {
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  .content {
+    padding: 10px 20px;
+  }
+}
+.scroller {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+}
+.scroller h1 {
+  color: white;
+  width: 100%;
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  -webkit-animation: up-in 1s ease;
+          animation: up-in 1s ease;
+}
+.top-up.ng-hide-add,
+.top-up.ng-hide-remove {
+  -webkit-transition: 0s ease top;
+  transition: 0s ease top;
+}
+.top-up.ng-hide-add-active,
+.top-up.ng-hide-remove-active {
+  -webkit-transition: 0.6s ease top;
+  transition: 0.6s ease top;
+}
+.top-up.ng-hide-add {
+  top: 0;
+}
+.top-up.ng-hide-add.ng-hide-add-active {
+  top: 100%;
+}
+.top-up.ng-hide-remove {
+  top: 100%;
+}
+.top-up.ng-hide-remove.ng-hide-remove-active {
+  top: 0;
+}
+.fullscreen-background {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  -webkit-transition: top 0.5s ease;
+  transition: top 0.5s ease;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.fullscreen-background.show {
+  top: 0;
+}
+.close-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+}
+.close-button i {
+  font-size: 35px;
+}
+.close-button:hover {
+  color: #ddd;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage(&quot;resize&quot;, &quot;*&quot;);
+  }
+</script>
+
+
+</head>
+
+<body translate=&quot;no&quot; >
+  <link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot; rel=&quot;stylesheet&quot;>
+<link href=&quot;https://fonts.googleapis.com/css?family=Raleway:200&quot; rel=&quot;stylesheet&quot;>
+
+<div class=&quot;container&quot; ng-class=&quot;{'no-scroll': selected.length}&quot; ng-app=&quot;app&quot; ng-controller=&quot;mainCtrl&quot;>
+	<div class=&quot;page&quot;>
+		<div class=&quot;grid&quot;>
+			<div class=&quot;grid-item&quot; ng-repeat=&quot;item in boxes&quot;>
+				<box class=&quot;box&quot; item=&quot;item&quot; on-select=&quot;selectBox&quot; ng-class=&quot;{'selected': selected[0].item.name == item.name}&quot;></box>
+			</div>
+		</div>
+	</div>
+	<div class=&quot;fullscreen-background top-up&quot; ng-show=&quot;selected.length&quot; ng-style=&quot;{'background-image': 'url(' + selected[0].item.image + ')'}&quot;></div>
+	<div class=&quot;scroller&quot; ng-show=&quot;selected.length&quot;>
+		<a class=&quot;close-button&quot; ng-click=&quot;clearSelection()&quot;>
+			<i class=&quot;material-icons&quot;>close</i>
+		</a>
+		<h1>{{selected[0].item.name}}</h1>
+		<div big-box ng-repeat=&quot;item in selected&quot; class=&quot;box on-top&quot; position=&quot;item.position&quot; selected=&quot;item.item&quot;>
+			<img ng-src=&quot;{{item.item.image}}&quot; alt=&quot;&quot; />
+			<div class=&quot;content&quot;>
+				<h2>Lorem ipsum dolor</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime laborum perferendis, ullam minus. Illo ad aliquid ab magni, enim nesciunt at consequuntur dolores explicabo nisi. Dolor, reiciendis suscipit alias nemo.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consequatur, sit saepe reprehenderit nisi dolorem, voluptates amet quos ab assumenda non id accusamus, dicta soluta laboriosam voluptas fuga sint deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officiis minus tenetur ex molestias qui possimus sit facilis dolorum suscipit. Cumque, aperiam inventore nobis? Veniam voluptatibus sapiente ea, voluptate dolores?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dicta ducimus ratione reiciendis officia odit omnis distinctio, eveniet et modi fuga nisi voluptatem nihil aliquam ex pariatur possimus repudiandae vero?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, quos ducimus nobis. Necessitatibus provident impedit, neque quia dolores? Quas, architecto id. Iure distinctio, illum eaque at quia assumenda modi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero soluta quisquam autem quasi ut ex ab modi. Sit soluta dicta incidunt quaerat tenetur fugiat, natus perspiciatis illo. Totam, quo, minus.</p>
+			</div>
+		</div>
+		
+	</div>
+</div>
+    <script src=&quot;https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js&quot;></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js'></script>
+<script src='https://codepen.io/ste-vg/pen/zBVakw.js'></script>
+  
+      <script id=&quot;rendered-js&quot; >
+var app = angular.module('app', ['ngAnimate']);
+
+app.controller('mainCtrl', function ($scope) {
+  $scope.boxes = [{
+    name: 'Friends',
+    image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900' },
+  {
+    name: 'Free',
+    image: 'https://source.unsplash.com/Cp-LUHPRpWM/900x900' },
+  {
+    name: 'Explore',
+    image: 'https://source.unsplash.com/7BjmDICVloE/900x900' },
+  {
+    name: 'Vast',
+    image: 'https://source.unsplash.com/WLUHO9A_xik/900x900' },
+  {
+    name: 'Playful',
+    image: 'https://source.unsplash.com/b2-fBVrfx0o/900x900' },
+  {
+    name: 'Grand',
+    image: 'https://source.unsplash.com/Ixp4YhCKZkI/900x900' },
+  {
+    name: 'Mist',
+    image: 'https://source.unsplash.com/8BmNurlVR6M/900x900' },
+  {
+    name: 'Sea',
+    image: 'https://source.unsplash.com/6YqpFWWQsno/900x900' },
+  {
+    name: 'Reach',
+    image: 'https://source.unsplash.com/zFnk_bTLApo/900x900' },
+  {
+    name: 'Awe',
+    image: 'https://source.unsplash.com/j4PaE7E2_Ws/900x900' },
+  {
+    name: 'Surf',
+    image: 'https://source.unsplash.com/uohGiEVhWiQ/900x900' },
+  {
+    name: 'Thrill',
+    image: 'https://source.unsplash.com/ssrbaKvxaos/900x900' }];
+
+
+  $scope.selected = [];
+  $scope.selectBox = function (item, position) {
+    $scope.selected = [{
+      item: item,
+      position: position }];
+
+    $scope.$apply();
+  };
+  $scope.clearSelection = function () {
+    $scope.selected = [];
+  };
+});
+
+app.directive('box', function () {
+  return {
+    restrict: 'E',
+    scope: {},
+    bindToController: {
+      onSelect: &quot;=&quot;,
+      item: &quot;=&quot; },
+
+    controllerAs: 'box',
+    controller: function () {
+      var box = this;
+
+      box.goFullscreen = function (e) {
+        box.onSelect(box.item, e.target.getBoundingClientRect());
+      };
+    },
+    link: function (scope, element) {
+      element.bind('click', scope.box.goFullscreen);
+      element.css({
+        'background-image': 'url(' + scope.box.item.image + ')' });
+
+    } };
+
+});
+
+app.directive('bigBox', function ($timeout) {
+  return {
+    restrict: 'AE',
+    scope: {},
+    bindToController: {
+      position: &quot;=&quot;,
+      selected: &quot;=&quot;,
+      onSelect: &quot;=&quot; },
+
+    controllerAs: 'box',
+    controller: function () {
+      var box = this;
+    },
+    link: function (scope, element) {
+      var css = {};
+      for (var key in scope.box.position) {
+        css[key] = scope.box.position[key] + 'px';
+      }
+
+      element.css(css);
+
+      $timeout(function () {
+        element.css({
+          top: '50%',
+          left: '10%' });
+
+        element.addClass('image-out');
+      }, 200);
+
+      $timeout(function () {
+        element.css({
+          width: '80%',
+          height: '100%' });
+
+      }, 500);
+
+      $timeout(function () {
+        element.addClass('show');
+      }, 800);
+    } };
+
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src=&quot;https://static.codepen.io/assets/editor/iframe/iframeRefreshCSS-e03f509ba0a671350b4b363ff105b2eb009850f34a2b4deaadaa63ed5d970b37.js&quot;></script>
+</body>
+
+</html>
+ 
+" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation  allow-scripts allow-top-navigation-by-user-activation"
+            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr"
+            allowTransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
+        </iframe>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.comment-card {
+  margin-top: 100px;
+  background: #f8f1f1;
+  padding: 15px;
+  border: solid 1px rgb(218, 211, 211);
+  border-radius: 3px;
+}
+
+ul#pastques {
+  list-style-type: none;
+}
+ul#pastques li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f059";
+  font-size: 24pt;
+  color: rgb(117, 21, 21);
+  margin-left: -48px;
+  padding-right: 10px;
+  position: relative;
+  top: 8px;
+}
+ul#pastques li {
+  margin: 0 0 2em 0;
+  padding: 5px;
+}
+
+ul#pastques li span {
+  font-size: 80%;
+  color: rgb(117, 21, 21);
+  font-style: italic;
+}
+#txQues {
+  height: 200px;
+}
+#reply {
+  background-color: black;
+  height: 30px;
+  width: 50px;
+  border: none;
+  border-radius: 2px;
+  margin: 10px;
+  color: white;
+}
+#Div1 {
+  width: 1020px;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: -25px;
+}
