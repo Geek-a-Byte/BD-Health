@@ -43,12 +43,10 @@
            username: patientusername.value,           
            role:patientrole.value,           
            password: patientpassword.value,
-           
-           
-        
+
 
          });
-         
+      //  window.alert("SignUp SuccessFul");
        window.location.reload()
         
   });
