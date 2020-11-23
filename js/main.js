@@ -108,7 +108,7 @@ var Signinrole;
                               // window. location. replace("../Doctor/DocPortal.html");
                               // window. location. replace("https://geek-a-byte.github.io/BD-Health/Doctor/DocPortal.html");
                                 setTimeout(function(){
-                                   document.location.href="../Doctor/DocPortal.html";
+                                   document.location.href="https://geek-a-byte.github.io/BD-Health/Doctor/DocPortal.html";
                                   //  window.location.reload();
                                        },1000);
                               console.log("user found");
@@ -158,7 +158,7 @@ var Signinrole;
                               // window. location. replace("../Patient/PatientPortal.html");
                               // window. location. replace("https://geek-a-byte.github.io/BD-Health/Patient/PatientPortal.html");
                                setTimeout(function(){
-                                   document.location.href="../Patient/PatientPortal.html";
+                                   document.location.href="https://geek-a-byte.github.io/BD-Health/Patient/PatientPortal.html";
                                   //  window.location.reload();
                                        },1000);
                               console.log("user found");
