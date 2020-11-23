@@ -165,3 +165,11 @@ select {
   border: 1px solid #bcc8cef6;
   border-radius: 4px;
 }
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
+}
