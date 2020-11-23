@@ -985,3 +985,12 @@ h1 {
   font-size: 40px;
   color: rgb(107, 12, 12);
 }
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
+}

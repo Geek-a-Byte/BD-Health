@@ -15,7 +15,7 @@ var Signinrole;
   const addUserBtn= document.getElementById('addBtn');
   const addPatientBtn= document.getElementById('addPatientBtn');
   const hospital= document.getElementById('hospital');
-  const role= document.getElementById('role');
+  
   const patientrole= document.getElementById('patient-role');
   const contactno= document.getElementById('phone');
   const address= document.getElementById('address');
@@ -30,7 +30,7 @@ var Signinrole;
          e.preventDefault();
            database.ref('/Doctors/'+username.value).set({    
            username: username.value,           
-           role:role.value,           
+                   
            password: password.value,
            hospital: hospital.value,
            designation: designation.value, 
@@ -38,9 +38,18 @@ var Signinrole;
            address:address.value,
            email:  email.value,
          });
-         
-       window.location.reload()
         
+  document.querySelector('.alert').style.display = 'block';
+   setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);
+  
+    setTimeout(function(){
+    // document.location.href="./index.html";
+    window.location.reload();
+  },3050);
+
+       
   });
 
  
@@ -49,16 +58,20 @@ var Signinrole;
            database.ref('/Patients/'+patientusername.value).set({
          
            username: patientusername.value,           
-           role:patientrole.value,           
+             
            password: patientpassword.value,
            email: patientemailId.value,
 
-         });
-      //  window.alert("SignUp SuccessFul");
+         }
+         );
+       
        window.location.reload()
         
   });
 
+ 
+  
+        
 
         var flag=1;
        
@@ -92,7 +105,12 @@ var Signinrole;
                           //  window.location.reload();
                          
                               alert("User Verified");
-                              window. location. replace("../Doctor/DocPortal.html");
+                              // window. location. replace("../Doctor/DocPortal.html");
+                              // window. location. replace("https://geek-a-byte.github.io/BD-Health/Doctor/DocPortal.html");
+                                setTimeout(function(){
+                                   document.location.href="../Doctor/DocPortal.html";
+                                  //  window.location.reload();
+                                       },1000);
                               console.log("user found");
                               flag=0;
                           
@@ -137,7 +155,12 @@ var Signinrole;
                           //  window.location.reload();
                          
                               alert("User Verified");
-                              window. location. replace("../Patient/PatientPortal.html");
+                              // window. location. replace("../Patient/PatientPortal.html");
+                              // window. location. replace("https://geek-a-byte.github.io/BD-Health/Patient/PatientPortal.html");
+                               setTimeout(function(){
+                                   document.location.href="../Patient/PatientPortal.html";
+                                  //  window.location.reload();
+                                       },1000);
                               console.log("user found");
                               flag=0;
                           
