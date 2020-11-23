@@ -35,5 +35,6 @@
                  when: firebase.database.ServerValue.TIMESTAMP
                 })
             }
+            alert("message sent successfully");
     })
    
