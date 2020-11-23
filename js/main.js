@@ -65,7 +65,15 @@ var Signinrole;
          }
          );
        
-       window.location.reload()
+       document.querySelector('.alert').style.display = 'block';
+   setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);
+  
+    setTimeout(function(){
+    // document.location.href="./index.html";
+    window.location.reload();
+  },3050);
         
   });
 
