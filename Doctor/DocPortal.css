@@ -11,6 +11,14 @@ body {
 ::before {
   box-sizing: border-box;
 }
+#logout {
+  border-radius: 5px;
+  width: 100%;
+  background: rgb(22, 22, 22);
+  color: antiquewhite;
+  border: 0;
+  text-transform: uppercase;
+}
 .profile-sidebar {
   /* top right bottom left */
   margin: 0 4px 30px 0;

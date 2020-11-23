@@ -1,3 +1,10 @@
+//   var e = document.getElementById("Signinrole");
+//   var value=e.selectElement.options[e.selectedIndex].value;// get selected option value
+//   var Signinrole=e.options[e.selectedIndex].text;//get the selected option text
+//   //document.getElementById("Signinrole").selectedIndex = 1;
+//   console.log(Signinrole);
+var Signinrole;
+ 
   const username= document.getElementById('username');
   const patientusername= document.getElementById('patient-username');
   const email= document.getElementById('email_id');
@@ -12,9 +19,11 @@
   const patientrole= document.getElementById('patient-role');
   const contactno= document.getElementById('phone');
   const address= document.getElementById('address');
-  const Signinrole=document.getElementById('Signinrole');
+//   const Signinrole=document.getElementById('Signinrole');
   const Signinemail=document.getElementById('Signinemail_id');
   const Signinpassword=document.getElementById('Signinpassword');
+  
+  
   const database =firebase.database();
 
   addUserBtn.addEventListener('click',(e)=>{
@@ -34,16 +43,15 @@
         
   });
 
-
-
+ 
    addPatientBtn.addEventListener('click',(e)=>{
          e.preventDefault();
-           database.ref('/Patients/'+username.value).set({
+           database.ref('/Patients/'+patientusername.value).set({
          
            username: patientusername.value,           
            role:patientrole.value,           
            password: patientpassword.value,
-
+           email: patientemailId.value,
 
          });
       //  window.alert("SignUp SuccessFul");
@@ -51,87 +59,108 @@
         
   });
 
-//   var leadsRef = database.ref('');
-// leadsRef.on('value', function(snapshot) {
-//     snapshot.forEach(function(childSnapshot) {
-//       var childData = childSnapshot.val();
-//     });
-// });
 
-
-// var userId = firebase.auth().currentUser.uid;
-// return firebase.database().ref('/Doctors/' + username.value).once('value').then((snapshot) => {
-//   var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
-//   // ...
-// });
-
-        //get comments whose frompage equals this page's pathname
-
+        var flag=1;
        
         SigninBtn.addEventListener('click',(e)=>{
+           var el = document.querySelector("#Signinrole");
+           Signinrole = el.value;
          e.preventDefault();
-            var DoctorRef=firebase.database().ref('Doctors/');
-            var PatientRef=firebase.database().ref('Patients/');
-        DoctorRef.once('value',function(snapshot){
+            var Ref;
+             if(Signinrole=="Doctor"){
+            Ref=firebase.database().ref('Doctors/');
+            Ref.once('value',function(snapshot){
                    snapshot.forEach(function(itemSnapshot){
                         //get the object for one snapshot
                         var itemData=itemSnapshot.val();
-                        var comment=itemData.comment ;
+                        console.log(itemData.email);
+                        console.log(itemData.password);
+                       
                         // var name=itemData. username;
-                        var email=itemData. email;
-                        var password=itemData. password;
-                        var role=itemData. role;
+                        var email=itemData.email;
+                        var password=itemData.password;
                         
-                        if(email==Signinemail.value && password==Signinpassword.value && role==Signinrole.value)
+                        // console.log(email);
+                        // console.log(password);
+                        console.log(Signinemail.value);
+                        console.log(Signinpassword.value);
+                        
+                        
+                        if(email==Signinemail.value && password==Signinpassword.value)
                         {
-                          alert("User Verified");
+                         
                           //  window.location.reload();
-                           if(role=="Doctor")
-                           {
+                         
+                              alert("User Verified");
                               window. location. replace("../Doctor/DocPortal.html");
-                           }
-                           else if(role=="Patient")
-                           {
-                              window. location. replace("../Patient/PatientPortal.html");
-                           }
+                              console.log("user found");
+                              flag=0;
+                          
                          
                         }
-                        // else
-                        // {
-                        //   alert("User Not Verified");
-                        //   console.log("user not found")
-                        // }
+                       
+                       
 
                         
                    })
+                        if(flag!=0)
+                        {
+                          alert("User Not Verified");
+                          console.log("user not found");
+                           
+                        }
         })
-       PatientRef.once('value',function(snapshot){
+      }
+            else if(Signinrole=="Patient"){
+               console.log(Signinrole);
+            Ref=firebase.database().ref('Patients/');
+            Ref.once('value',function(snapshot){
                    snapshot.forEach(function(itemSnapshot){
                         //get the object for one snapshot
                         var itemData=itemSnapshot.val();
+                        console.log(itemData.email);
+                        console.log(itemData.password);
+                       
+                        // var name=itemData. username;
+                        var email=itemData.email;
                         var password=itemData.password;
-                        var role=itemData.role;
                         
-                        if( password==Signinpassword.value && role==Signinrole.value)
+                        // console.log(email);
+                        // console.log(password);
+                        console.log(Signinemail.value);
+                        console.log(Signinpassword.value);
+                        
+                        
+                        if(email==Signinemail.value && password==Signinpassword.value)
                         {
-                          alert("User Verified");
+                         
                           //  window.location.reload();
-                        
-                           if(role=="Patient")
-                           {
+                         
+                              alert("User Verified");
                               window. location. replace("../Patient/PatientPortal.html");
-                           }
+                              console.log("user found");
+                              flag=0;
+                          
                          
                         }
-                        // else
-                        // {
-                        //   alert("User Not Verified");
-                        //   console.log("user not found")
-                        // }
+                       
 
                         
                    })
+                        if(flag!=0)
+                        {
+                          alert("User Not Verified");
+                          console.log("user not found");
+                           
+                        }
         })
+      }
+      else
+      {
+         alert("User Not Verified");
+         console.log("user not found");
+      }
+     
          
       
         

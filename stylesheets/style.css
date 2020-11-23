@@ -92,13 +92,13 @@ nav ul .dropdown {
 nav ul .dropdown i {
   margin-top: 13px;
 }
-#menuwrapper div {
+.dropdown div {
   display: none;
   position: relative;
   margin: 0;
   padding: 0;
 }
-#menuwrapper:hover div {
+.dropdown:hover div {
   display: block;
   position: absolute;
   /* margin-top: 15px; */

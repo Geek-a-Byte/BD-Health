@@ -106,10 +106,10 @@
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="#">Investigation and Diagonosis</a></li>
-                                        <li><a href="#">Clinical trials</a></li>
+                                        <li><a href="./ClinicalTrials.html">Clinical trials</a></li>
                                         <li><a href="#">Research and Discovery</a></li>
-                                        <li><a href="#">Case study</a></li>
-                                        <li><a href="#">Survey</a></li>
+                                        <li><a href="./CaseStudy.html">Case study</a></li>
+                                        <li><a href="./Survey.html">Survey</a></li>
                                         <li><a href="#">Drug review</a></li>
                                     </ul>
                                 </div>
@@ -231,10 +231,7 @@
                                             <label>Designation</label>
                                             <input id="Designation" type="text" name="Designation">
                                         </p>
-                                        <p>
-                                            <label>Role</label>
-                                            <input id="role" type="text" name="role">
-                                        </p>
+                                        
                                         <p id="email">
                                             <label>Email Address</label>
                                             <input id="email_id" type="email" name="email">
@@ -274,13 +271,10 @@
                                             <input id="patient-username" type="text" name="name">
                                         </p>
                     
-                                        <p>
-                                            <label>Role</label>
-                                            <input id="patient-role" type="text" name="role">
-                                        </p>
+                                       
                                         <p id="email">
                                             <label>Email Address</label>
-                                            <input type="patient-email" name="email">
+                                            <input id="patient-email" type="patient-email" name="email">
                                         </p>
                                         <p>
                                             <label>password</label>
@@ -313,10 +307,7 @@
                                             <input id="admin-username" type="text" name="name">
                                         </p>
                                       
-                                        <p>
-                                            <label>Role</label>
-                                            <input id="admin-role" type="text" name="role">
-                                        </p>
+                                     
                                         <p>
                                             <label>Email Address</label>
                                             <input id="admin-email_id" type="text" name="email_id">
@@ -372,7 +363,13 @@
     
                                         <p>
                                                 <label>Role</label>
-                                                <input id="Signinrole" type="text" name="role">
+                                                <select id="Signinrole" name="role">
+                                                    <option id="SelectedDoctor" value="Doctor">Doctor</option>
+                                                    <option id="SelectedPatient" value="Patient">Patient</option>
+                                                    <option id="SelectedAdmin" value="Admin">Admin</option>
+                                                   
+                                                </select>
+                                                <!-- <input id="Signinrole" type="text" name="role"> -->
                                             </p>
                                         <p>
                                             <label>Email Address</label>
@@ -393,7 +390,7 @@
                                             </p> -->
                                         <span></span>
                                         <p class="full">
-                                            <button type="Submit" id="SigninBtn">SignIn</button>
+                                            <button class="btn" type="Submit" id="SigninBtn">SignIn</button>
                                         </p>
         </form>
         </div>
