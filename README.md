@@ -7,3 +7,4 @@ A website developed to create
 - a section for sharing the stories of courageous patients
 
 ![GitHub Logo](/images/logo.png)
+<img src="./screenshot-geek-a-byte.github.io-2021.01.27-23_29_51">
