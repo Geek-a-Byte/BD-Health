@@ -6,6 +6,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.unbreakable-container {
+  width: 12%;
+}
 .contact {
   width: 80%;
   padding: 30px;
