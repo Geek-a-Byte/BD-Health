@@ -6,6 +6,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.contact {
+  width: 80%;
+  padding: 30px;
+}
 .icon {
   display: flex;
 
@@ -37,6 +41,7 @@ body {
   font-size: 20px;
   /* margin: 15px; */
 }
+
 .contact form {
   display: grid;
   grid-template-rows: 1fr;
@@ -80,11 +85,11 @@ body {
 }
 
 #about-us {
-  background-color: #fff;
+  /* background-color: #fff;
   position: absolute;
   top: 5%;
   left: 42%;
-  color: black;
+  color: black; */
   padding: 20px;
 }
 
@@ -99,23 +104,25 @@ body {
 }
 
 #hello {
-  height: 721px;
-  width: 30%;
+  /* height: 721px; */
+  /* width: 30%; */
   /* position: relative; */
-  position: absolute;
-  left: 140px;
+  /* position: absolute; */
+  /* left: 140px; */
 }
-.heroine {
-  display: grid;
-  grid-template-columns: 0.2fr 0.2fr 2fr;
-}
+
 #hello {
-  display: grid;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 140px;
+  width: 40%;
+  /* display: grid; */
   place-content: center;
   overflow: hidden;
   /* font: 400 0.5em/1.4 -apple-system, BlinkMacSystemFont, sans-serif; */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
   color: whitesmoke;
   background: linear-gradient(0deg, rgba(88, 3, 3, 0.74), rgba(0, 0, 0, 0.76)),
     url(./titlelogo.png);
@@ -124,8 +131,8 @@ body {
   background-repeat: no-repeat;
 }
 
-#hello > * {
-  display: flex;
+#hello {
+  /* display: flex; */
 }
 
 p {
@@ -140,9 +147,20 @@ span {
   width: 0.25em;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 1280px) {
+  .contact-row {
+    flex-direction: column;
+  }
+  .unbreakable-container {
+    display: none;
+  }
   #hello {
-    font-size: 1.4em;
+    width: 100%;
+    padding: 50px;
+    margin: 0;
+  }
+  .contact {
+    width: 100%;
   }
 }
 

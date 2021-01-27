@@ -30,11 +30,14 @@ table {
 .card {
   margin: 10px;
 }
+.doc-name {
+  margin-right: 10px;
+}
 .doctor-img img {
   height: 200px;
   width: 200px;
   border-radius: 5px;
-  margin-right: 95px;
+  margin-right: 195px;
 }
 .doc-department img {
   height: 25px;
